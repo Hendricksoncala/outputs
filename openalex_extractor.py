@@ -12,7 +12,7 @@ from urllib.request import Request, urlopen
 
 API = "https://api.openalex.org"
 API_KEY = "Aqui va tu api key de OpenAlex"  # Configura la variable OPENALEX_API_KEY con tu clave gratuita de OpenAlex. 
-MAX_RESULTADOS = 5
+MAX_RESULTADOS = 70
 
 
 def consultar(endpoint, parametros):
