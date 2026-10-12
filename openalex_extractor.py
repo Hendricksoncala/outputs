@@ -11,7 +11,7 @@ from urllib.request import Request, urlopen
 
 
 API = "https://api.openalex.org"
-API_KEY = "Aqui va tu api key de OpenAlex"  # Configura la variable OPENALEX_API_KEY con tu clave gratuita de OpenAlex. 
+API_KEY = "R1O9GVmiIE99uEncU928ck"  # Configura la variable OPENALEX_API_KEY con tu clave gratuita de OpenAlex. 
 MAX_RESULTADOS = 70
 
 
