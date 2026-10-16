@@ -8,18 +8,34 @@ from pathlib import Path
 
 
 MODELO = "mixtral-8x7b-32768"
+CATEGORIAS_SUSTAINCROP = [
+    "Investigación Científica",
+    "Industria y Empresas",
+    "Sector Primario y Productores",
+    "Política y Regulación",
+    "Financiación e Inversión",
+    "Sociedad Civil y Cooperación",
+]
 
 
 def clasificar_resumen(cliente, resumen, tipo_cultivo):
     if not resumen.strip():
-        return "No evaluable", "La fila no contiene resumen."
+        return "No evaluable", "La fila no contiene resumen.", ""
+
+    lista_categorias = "\n".join(
+        f"{i}. {categoria}"
+        for i, categoria in enumerate(CATEGORIAS_SUSTAINCROP, start=1)
+    )
 
     prompt = f"""
 Evalúa la relevancia del artículo para investigación en agricultura sostenible,
 cultivos industriales y valorización de biomasa (proyecto SUSTAINCrop).
 Considera el cultivo indicado, si existe. Usa solo la información del resumen.
-Devuelve JSON válido con exactamente dos claves: "relevancia" ("Alta", "Media"
-o "Baja") y "justificacion" (una frase breve en español).
+Clasifica también el resumen en exactamente UNA de las categorías siguientes:
+{lista_categorias}
+Devuelve JSON válido con exactamente tres claves: "relevancia" ("Alta", "Media"
+o "Baja"), "justificacion" (una frase breve en español) y
+"categoria_sustaincrop" (el nombre exacto de una de las seis categorías).
 
 Tipo de cultivo: {tipo_cultivo or "No especificado"}
 Resumen: {resumen}
@@ -36,7 +52,17 @@ Resumen: {resumen}
     if relevancia not in {"Alta", "Media", "Baja"}:
         relevancia = "No evaluable"
     justificacion = resultado.get("justificacion", "")
-    return relevancia, justificacion
+    categoria = resultado.get("categoria_sustaincrop", "")
+    categoria_normalizada = categoria.strip().casefold()
+    categoria = next(
+        (
+            opcion
+            for opcion in CATEGORIAS_SUSTAINCROP
+            if opcion.casefold() == categoria_normalizada
+        ),
+        "",
+    )
+    return relevancia, justificacion, categoria
 
 
 def main():
@@ -45,7 +71,7 @@ def main():
     else:
         archivo_entrada = Path(input("Ruta del CSV generado por OpenAlex: ").strip())
 
-    api_key = os.getenv("GROQ_API_KEY")
+    api_key = "COLOQUEN AQUI SU API DE GROQ PORFI, PERSONAL CADA UNO"
     if not api_key:
         print("Configura la variable GROQ_API_KEY con tu clave de Groq.")
         return
@@ -70,14 +96,18 @@ def main():
             print("El CSV no contiene la columna 'RESUMEN DE ARTÍCULO'.")
             return
 
-        columnas = list(lector.fieldnames) + ["RELEVANCIA", "JUSTIFICACION"]
+        columnas = list(lector.fieldnames) + [
+            "RELEVANCIA",
+            "JUSTIFICACION",
+            "CATEGORÍA SUSTAINCROP",
+        ]
         with archivo_salida.open("w", newline="", encoding="utf-8-sig") as salida:
             escritor = csv.DictWriter(salida, fieldnames=columnas)
             escritor.writeheader()
 
             for numero, fila in enumerate(lector, start=1):
                 try:
-                    relevancia, justificacion = clasificar_resumen(
+                    relevancia, justificacion, categoria = clasificar_resumen(
                         cliente,
                         fila.get("RESUMEN DE ARTÍCULO", ""),
                         fila.get("TIPO DE CULTIVO", ""),
@@ -85,9 +115,11 @@ def main():
                 except Exception as error:
                     relevancia = "Error"
                     justificacion = str(error)
+                    categoria = ""
 
                 fila["RELEVANCIA"] = relevancia
                 fila["JUSTIFICACION"] = justificacion
+                fila["CATEGORÍA SUSTAINCROP"] = categoria
                 escritor.writerow(fila)
                 print(f"Fila {numero}: {relevancia}")
 
