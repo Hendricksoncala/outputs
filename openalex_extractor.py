@@ -1,7 +1,6 @@
 """Extrae trabajos de una institución y temas dados desde OpenAlex."""
 
 import csv
-import json
 import os
 import re
 from pathlib import Path
@@ -12,7 +11,12 @@ from urllib.request import Request, urlopen
 
 API = "https://api.openalex.org"
 API_KEY = "R1O9GVmiIE99uEncU928ck"  # Configura la variable OPENALEX_API_KEY con tu clave gratuita de OpenAlex. 
-MAX_RESULTADOS = 70
+MAX_RESULTADOS = 100
+RESULTADOS_POR_PAGINA = 50
+SELECT_TRABAJOS = (
+    "id,doi,title,authorships,abstract_inverted_index,publication_year,"
+    "concepts,keywords,primary_location,locations,awards,funders,type"
+)
 
 
 def consultar(endpoint, parametros):
@@ -49,20 +53,6 @@ def buscar_institucion(nombre):
     return None
 
 
-def extraer_colaboradores(trabajo):
-    """Agrupa los autores y las instituciones asociadas por firma/autorship."""
-    colaboradores = []
-    for firma in trabajo.get("authorships", []):
-        autor = firma.get("author", {}).get("display_name", "Autor sin nombre")
-        instituciones = [
-            institucion.get("display_name")
-            for institucion in firma.get("institutions", [])
-            if institucion.get("display_name")
-        ]
-        colaboradores.append({"autor": autor, "instituciones": instituciones})
-    return colaboradores
-
-
 def reconstruir_resumen(indice):
     """Reconstruye el abstract de OpenAlex a partir de su índice invertido."""
     if not indice:
@@ -74,6 +64,74 @@ def reconstruir_resumen(indice):
     return " ".join(palabra for _, palabra in sorted(palabras))
 
 
+def extraer_financiadores(trabajo):
+    """Obtiene financiadores de awards y funders (esquema actual de OpenAlex)."""
+    nombres = []
+    vistos = set()
+    for campo in ("awards", "funders"):
+        for elemento in trabajo.get(campo, []) or []:
+            nombre = (
+                elemento.get("funder_display_name")
+                or elemento.get("display_name")
+                or ""
+            ).strip()
+            if nombre and nombre.casefold() not in vistos:
+                nombres.append(nombre)
+                vistos.add(nombre.casefold())
+    return ", ".join(nombres)
+
+
+def sintetizar_doi(doi):
+    """Devuelve el DOI como URL DOI cuando OpenAlex solo entrega el identificador."""
+    doi = (doi or "").strip()
+    if doi.startswith("10."):
+        return f"https://doi.org/{doi}"
+    return doi
+
+
+def extraer_autores(trabajo):
+    nombres = [
+        firma.get("author", {}).get("display_name", "").strip()
+        for firma in trabajo.get("authorships", [])
+    ]
+    return "; ".join(nombre for nombre in nombres if nombre)
+
+
+def tiene_dataset_o_repositorio(trabajo):
+    """Marca Sí si hay data_availability, un dataset o una ubicación de repositorio."""
+    if trabajo.get("data_availability"):
+        return "Sí"
+    if trabajo.get("type", "").casefold() == "dataset":
+        return "Sí"
+
+    ubicaciones = list(trabajo.get("locations", []) or [])
+    ubicacion_principal = trabajo.get("primary_location")
+    if ubicacion_principal:
+        ubicaciones.append(ubicacion_principal)
+    for ubicacion in ubicaciones:
+        source = (ubicacion or {}).get("source") or {}
+        if source.get("type", "").casefold() == "repository":
+            return "Sí"
+    return "No"
+
+
+def extraer_convocatorias(trabajo):
+    """Extrae IDs disponibles en awards, el reemplazo actual de grants en OpenAlex."""
+    convocatorias = []
+    vistos = set()
+    for award in trabajo.get("awards", []) or []:
+        award_id = (
+            award.get("award_id")
+            or award.get("funder_award_id")
+            or award.get("id")
+            or ""
+        ).strip()
+        if award_id and award_id.casefold() not in vistos:
+            convocatorias.append(award_id)
+            vistos.add(award_id.casefold())
+    return "; ".join(convocatorias)
+
+
 def extraer_trabajos(nombre_institucion, temas):
     """Busca trabajos y los guarda en un CSV; devuelve la ruta del archivo."""
     if not API_KEY:
@@ -81,9 +139,10 @@ def extraer_trabajos(nombre_institucion, temas):
         return None
 
     nombre_institucion = nombre_institucion.strip()
-    temas = [tema.strip() for tema in temas if tema.strip()]
-    if not nombre_institucion or not temas:
-        print("Debes indicar una institución y al menos un tema de búsqueda.")
+    temas = [tema.strip() for tema in (temas or []) if tema.strip()]
+    tipo_cultivo = temas[0] if temas else ""
+    if not nombre_institucion:
+        print("Debes indicar una institución.")
         return None
 
     try:
@@ -94,42 +153,85 @@ def extraer_trabajos(nombre_institucion, temas):
 
         filtro = f"authorships.institutions.id:{ident}"
         trabajos = {}
-        for tema in temas:
-            datos = consultar(
-                "works",
-                {
-                    "search": tema,
+        # Sin temas, omite por completo "search" y obtiene los más recientes.
+        # Con temas, hace una búsqueda paginada por cada término.
+        consultas = temas or [None]
+        for tema in consultas:
+            pagina = 1
+            while len(trabajos) < MAX_RESULTADOS:
+                parametros = {
                     "filter": filtro,
-                    "per_page": 5,
-                    "select": "id,doi,title,authorships,abstract_inverted_index",
-                },
-            )
-            for trabajo in datos.get("results", []):
-                trabajos[trabajo["id"]] = trabajo
+                    "per_page": RESULTADOS_POR_PAGINA,
+                    "page": pagina,
+                    "sort": "publication_year:desc",
+                    "select": SELECT_TRABAJOS,
+                }
+                if tema:
+                    parametros["search"] = tema
 
-        resultados = list(trabajos.values())[:MAX_RESULTADOS]
+                datos = consultar("works", parametros)
+                resultados_pagina = datos.get("results", [])
+                for trabajo in resultados_pagina:
+                    trabajos[trabajo["id"]] = trabajo
+                    if len(trabajos) >= MAX_RESULTADOS:
+                        break
+
+                total = datos.get("meta", {}).get("count", 0)
+                if (
+                    not resultados_pagina
+                    or len(resultados_pagina) < RESULTADOS_POR_PAGINA
+                    or pagina * RESULTADOS_POR_PAGINA >= total
+                ):
+                    break
+                pagina += 1
+
+        resultados = sorted(
+            trabajos.values(),
+            key=lambda trabajo: trabajo.get("publication_year") or 0,
+            reverse=True,
+        )[:MAX_RESULTADOS]
         if not resultados:
-            print("No encontré trabajos con esos términos. Prueba otros temas agrícolas.")
+            print("No encontré trabajos para esa institución y esos filtros.")
             return None
 
         nombre_archivo = re.sub(r"[^\w.-]+", "_", nombre_institucion, flags=re.UNICODE)
         nombre_archivo = nombre_archivo.strip("._") or "institucion"
         archivo_csv = Path(__file__).with_name(f"resultados_{nombre_archivo}.csv")
         with archivo_csv.open("w", newline="", encoding="utf-8-sig") as archivo:
-            columnas = ["DOI", "Titulo", "Resumen", "Actores_Asociados"]
+            columnas = [
+                "DOI",
+                "HIPERVÍNCULO SINTETIZADO",
+                "AÑO",
+                "REVISTA",
+                "AUTORES",
+                "TIPO DE CULTIVO",
+                "DATASET",
+                "RESUMEN DE ARTÍCULO",
+                "ENTE FINANCIADOR",
+                "CONVOCATORIA",
+            ]
             escritor = csv.DictWriter(archivo, fieldnames=columnas)
             escritor.writeheader()
             for trabajo in resultados:
                 escritor.writerow(
                     {
                         "DOI": trabajo.get("doi") or "",
-                        "Titulo": trabajo.get("title") or "",
-                        "Resumen": reconstruir_resumen(
+                        "HIPERVÍNCULO SINTETIZADO": sintetizar_doi(
+                            trabajo.get("doi")
+                        ),
+                        "AÑO": trabajo.get("publication_year") or "",
+                        "REVISTA": (
+                            (trabajo.get("primary_location") or {}).get("source")
+                            or {}
+                        ).get("display_name", ""),
+                        "AUTORES": extraer_autores(trabajo),
+                        "TIPO DE CULTIVO": tipo_cultivo,
+                        "DATASET": tiene_dataset_o_repositorio(trabajo),
+                        "RESUMEN DE ARTÍCULO": reconstruir_resumen(
                             trabajo.get("abstract_inverted_index")
                         ),
-                        "Actores_Asociados": json.dumps(
-                            extraer_colaboradores(trabajo), ensure_ascii=False
-                        ),
+                        "ENTE FINANCIADOR": extraer_financiadores(trabajo),
+                        "CONVOCATORIA": extraer_convocatorias(trabajo),
                     }
                 )
         print(f"Se guardaron {len(resultados)} resultados en: {archivo_csv}")
@@ -147,7 +249,10 @@ def extraer_trabajos(nombre_institucion, temas):
 def main():
     """Pide parámetros en terminal y ejecuta la extracción."""
     institucion = input("¿Qué institución deseas buscar? ").strip()
-    temas = input("¿Qué temas (separados por coma)? ").split(",")
+    entrada_temas = input(
+        "¿Qué temas (separados por coma)? (opcional; Enter para todos) "
+    ).strip()
+    temas = [tema.strip() for tema in entrada_temas.split(",") if tema.strip()]
     extraer_trabajos(institucion, temas)
 
 
