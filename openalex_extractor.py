@@ -3,6 +3,8 @@
 import csv
 import os
 import re
+import json
+import sys
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode

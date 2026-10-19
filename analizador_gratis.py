@@ -4,23 +4,24 @@ import csv
 import json
 import os
 import sys
+import time
 from pathlib import Path
 
 
-MODELO = "mixtral-8x7b-32768"
+MODELO = "openai/gpt-oss-20b"
 CATEGORIAS_SUSTAINCROP = [
-    "Investigación Científica",
-    "Industria y Empresas",
-    "Sector Primario y Productores",
-    "Política y Regulación",
-    "Financiación e Inversión",
-    "Sociedad Civil y Cooperación",
+    "Investigación & Conocimiento",
+    "Industria & Mercado",
+    "Sector Primario",
+    "Política & Regulación",
+    "Financiación & Inversión",
+    "Sociedad Civil & Territorio",
 ]
 
 
 def clasificar_resumen(cliente, resumen, tipo_cultivo):
     if not resumen.strip():
-        return "No evaluable", "La fila no contiene resumen.", ""
+        return "No evaluable", "", "No aplica"
 
     lista_categorias = "\n".join(
         f"{i}. {categoria}"
@@ -31,11 +32,18 @@ def clasificar_resumen(cliente, resumen, tipo_cultivo):
 Evalúa la relevancia del artículo para investigación en agricultura sostenible,
 cultivos industriales y valorización de biomasa (proyecto SUSTAINCrop).
 Considera el cultivo indicado, si existe. Usa solo la información del resumen.
-Clasifica también el resumen en exactamente UNA de las categorías siguientes:
+Clasifica el resumen en exactamente UNA de estas categorías de SUSTAINCrop:
 {lista_categorias}
-Devuelve JSON válido con exactamente tres claves: "relevancia" ("Alta", "Media"
-o "Baja"), "justificacion" (una frase breve en español) y
-"categoria_sustaincrop" (el nombre exacto de una de las seis categorías).
+Para "enfoque_sostenibilidad_ue", identifica si el resumen aborda prácticas
+agrícolas sostenibles (por ejemplo, agrosilvicultura o rotación de cultivos) o
+diseño químico/material sostenible (Safe and Sustainable by Design, SSbD).
+Escribe el enfoque específico que aparece en el resumen, o "No aplica" si no
+hay relación. No infieras prácticas que el resumen no mencione.
+
+Devuelve JSON válido con exactamente estas tres claves:
+- "relevancia": "Alta", "Media" o "Baja".
+- "categoria_sustaincrop": el nombre exacto de una categoría de la lista.
+- "enfoque_sostenibilidad_ue": el enfoque específico o "No aplica".
 
 Tipo de cultivo: {tipo_cultivo or "No especificado"}
 Resumen: {resumen}
@@ -47,11 +55,14 @@ Resumen: {resumen}
         response_format={"type": "json_object"},
         temperature=0,
     )
-    resultado = json.loads(respuesta.choices[0].message.content)
+    texto_respuesta = respuesta.choices[0].message.content
+    texto_respuesta = (
+        texto_respuesta.replace("```json", "").replace("```", "").strip()
+    )
+    resultado = json.loads(texto_respuesta)
     relevancia = resultado.get("relevancia", "No evaluable")
     if relevancia not in {"Alta", "Media", "Baja"}:
         relevancia = "No evaluable"
-    justificacion = resultado.get("justificacion", "")
     categoria = resultado.get("categoria_sustaincrop", "")
     categoria_normalizada = categoria.strip().casefold()
     categoria = next(
@@ -62,7 +73,10 @@ Resumen: {resumen}
         ),
         "",
     )
-    return relevancia, justificacion, categoria
+    enfoque_ue = resultado.get("enfoque_sostenibilidad_ue", "No aplica")
+    if not isinstance(enfoque_ue, str) or not enfoque_ue.strip():
+        enfoque_ue = "No aplica"
+    return relevancia, categoria, enfoque_ue.strip()
 
 
 def main():
@@ -71,7 +85,7 @@ def main():
     else:
         archivo_entrada = Path(input("Ruta del CSV generado por OpenAlex: ").strip())
 
-    api_key = "COLOQUEN AQUI SU API DE GROQ PORFI, PERSONAL CADA UNO"
+    api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
         print("Configura la variable GROQ_API_KEY con tu clave de Groq.")
         return
@@ -96,32 +110,37 @@ def main():
             print("El CSV no contiene la columna 'RESUMEN DE ARTÍCULO'.")
             return
 
-        columnas = list(lector.fieldnames) + [
+        columnas_resultado = [
             "RELEVANCIA",
-            "JUSTIFICACION",
             "CATEGORÍA SUSTAINCROP",
+            "ENFOQUE SOSTENIBILIDAD UE",
         ]
+        columnas = [
+            nombre for nombre in lector.fieldnames if nombre not in columnas_resultado
+        ] + columnas_resultado
         with archivo_salida.open("w", newline="", encoding="utf-8-sig") as salida:
             escritor = csv.DictWriter(salida, fieldnames=columnas)
             escritor.writeheader()
 
-            for numero, fila in enumerate(lector, start=1):
+            for index, fila in enumerate(lector, start=1):
                 try:
-                    relevancia, justificacion, categoria = clasificar_resumen(
+                    relevancia, categoria, enfoque_ue = clasificar_resumen(
                         cliente,
                         fila.get("RESUMEN DE ARTÍCULO", ""),
                         fila.get("TIPO DE CULTIVO", ""),
                     )
                 except Exception as error:
+                    print(f"Error en fila {index}: {error}")
                     relevancia = "Error"
-                    justificacion = str(error)
                     categoria = ""
+                    enfoque_ue = "Error"
 
                 fila["RELEVANCIA"] = relevancia
-                fila["JUSTIFICACION"] = justificacion
                 fila["CATEGORÍA SUSTAINCROP"] = categoria
+                fila["ENFOQUE SOSTENIBILIDAD UE"] = enfoque_ue
                 escritor.writerow(fila)
-                print(f"Fila {numero}: {relevancia}")
+                print(f"Fila {index}: {relevancia}")
+                time.sleep(2)
 
     print(f"Análisis guardado en: {archivo_salida}")
 
