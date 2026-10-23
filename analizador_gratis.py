@@ -85,7 +85,7 @@ def main():
     else:
         archivo_entrada = Path(input("Ruta del CSV generado por OpenAlex: ").strip())
 
-    api_key = os.getenv("GROQ_API_KEY")
+    api_key = "api"
     if not api_key:
         print("Configura la variable GROQ_API_KEY con tu clave de Groq.")
         return

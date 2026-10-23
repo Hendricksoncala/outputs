@@ -99,6 +99,21 @@ def extraer_autores(trabajo):
     return "; ".join(nombre for nombre in nombres if nombre)
 
 
+def extraer_instituciones_colaboradoras(trabajo):
+    """Recoge instituciones únicas asociadas a todos los autores del trabajo."""
+    nombres = []
+    vistos = set()
+    for firma in trabajo.get("authorships", []) or []:
+        for institucion in firma.get("institutions", []) or []:
+            nombre = (institucion or {}).get("display_name")
+            if isinstance(nombre, str):
+                nombre = nombre.strip()
+                if nombre and nombre.casefold() not in vistos:
+                    nombres.append(nombre)
+                    vistos.add(nombre.casefold())
+    return ", ".join(nombres)
+
+
 def tiene_dataset_o_repositorio(trabajo):
     """Marca Sí si hay data_availability, un dataset o una ubicación de repositorio."""
     if trabajo.get("data_availability"):
@@ -206,6 +221,7 @@ def extraer_trabajos(nombre_institucion, temas):
                 "AÑO",
                 "REVISTA",
                 "AUTORES",
+                "INSTITUCIONES_COLABORADORAS",
                 "TIPO DE CULTIVO",
                 "DATASET",
                 "RESUMEN DE ARTÍCULO",
@@ -227,6 +243,9 @@ def extraer_trabajos(nombre_institucion, temas):
                             or {}
                         ).get("display_name", ""),
                         "AUTORES": extraer_autores(trabajo),
+                        "INSTITUCIONES_COLABORADORAS": (
+                            extraer_instituciones_colaboradoras(trabajo)
+                        ),
                         "TIPO DE CULTIVO": tipo_cultivo,
                         "DATASET": tiene_dataset_o_repositorio(trabajo),
                         "RESUMEN DE ARTÍCULO": reconstruir_resumen(
