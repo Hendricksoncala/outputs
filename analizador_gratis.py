@@ -7,8 +7,8 @@ import sys
 import time
 from pathlib import Path
 
-
-MODELO = "openai/gpt-oss-20b"
+# Cambio modelo para ahorrar tokens
+MODELO = "llama3-8b-8192"
 CATEGORIAS_SUSTAINCROP = [
     "Investigación & Conocimiento",
     "Industria & Mercado",
@@ -20,6 +20,7 @@ CATEGORIAS_SUSTAINCROP = [
 
 
 def clasificar_resumen(cliente, resumen, tipo_cultivo):
+    resumen = (resumen or '').strip()
     if not resumen.strip():
         return "No evaluable", "", "No aplica"
 
@@ -28,6 +29,7 @@ def clasificar_resumen(cliente, resumen, tipo_cultivo):
         for i, categoria in enumerate(CATEGORIAS_SUSTAINCROP, start=1)
     )
 
+    resumen = resumen[:800]
     prompt = f"""
 Evalúa la relevancia del artículo para investigación en agricultura sostenible,
 cultivos industriales y valorización de biomasa (proyecto SUSTAINCrop).
@@ -85,7 +87,7 @@ def main():
     else:
         archivo_entrada = Path(input("Ruta del CSV generado por OpenAlex: ").strip())
 
-    api_key = "api"
+    api_key = "api_groq"
     if not api_key:
         print("Configura la variable GROQ_API_KEY con tu clave de Groq.")
         return
@@ -147,3 +149,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

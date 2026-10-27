@@ -13,8 +13,9 @@ from urllib.request import Request, urlopen
 
 API = "https://api.openalex.org"
 API_KEY = "R1O9GVmiIE99uEncU928ck"  # Configura la variable OPENALEX_API_KEY con tu clave gratuita de OpenAlex. 
-MAX_RESULTADOS = 100
-RESULTADOS_POR_PAGINA = 50
+MAX_RESULTADOS = 300
+RESULTADOS_POR_PAGINA = 120
+BUSQUEDA_TEMATICA_BASE = "(agriculture OR sustainability OR bioeconomy OR crops OR agroecology OR biomass)"
 SELECT_TRABAJOS = (
     "id,doi,title,authorships,abstract_inverted_index,publication_year,"
     "concepts,keywords,primary_location,locations,awards,funders,type"
@@ -170,8 +171,8 @@ def extraer_trabajos(nombre_institucion, temas):
 
         filtro = f"authorships.institutions.id:{ident}"
         trabajos = {}
-        # Sin temas, omite por completo "search" y obtiene los más recientes.
-        # Con temas, hace una búsqueda paginada por cada término.
+        # Exige coincidencia con al menos un término temático base.
+        # Si se proporcionan temas, cada uno se combina como filtro adicional.
         consultas = temas or [None]
         for tema in consultas:
             pagina = 1
@@ -184,7 +185,9 @@ def extraer_trabajos(nombre_institucion, temas):
                     "select": SELECT_TRABAJOS,
                 }
                 if tema:
-                    parametros["search"] = tema
+                    parametros["search"] = f"{BUSQUEDA_TEMATICA_BASE} AND ({tema})"
+                else:
+                    parametros["search"] = BUSQUEDA_TEMATICA_BASE
 
                 datos = consultar("works", parametros)
                 resultados_pagina = datos.get("results", [])
@@ -279,3 +282,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
