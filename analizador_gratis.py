@@ -63,6 +63,7 @@ Resumen: {resumen}
     )
     resultado = json.loads(texto_respuesta)
     relevancia = resultado.get("relevancia", "No evaluable")
+    #Cambiar relevancia a las que estan en el documento
     if relevancia not in {"Alta", "Media", "Baja"}:
         relevancia = "No evaluable"
     categoria = resultado.get("categoria_sustaincrop", "")
