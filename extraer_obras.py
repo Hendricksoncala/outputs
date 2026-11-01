@@ -105,8 +105,8 @@ def cargar_nodos(ruta=ARCHIVO_NODOS):
     return validos, omitidos
 
 
-def filtro_nodo(openalex_id):
-    return f"authorships.institutions.lineage:{short_id(openalex_id)},from_publication_date:{DESDE}"
+def filtro_nodo(openalex_id, desde=DESDE):
+    return f"authorships.institutions.lineage:{short_id(openalex_id)},from_publication_date:{desde}"
 
 
 def api_json(endpoint, params, api_key, per_page_fallback=False):
@@ -538,9 +538,9 @@ def inicializar_checkpoint(conn, nodo_id, modo):
     ).fetchone()
 
 
-def contar_obras(nodo, api_key):
+def contar_obras(nodo, api_key, desde):
     params = {
-        "filter": filtro_nodo(nodo["openalex_id"]),
+        "filter": filtro_nodo(nodo["openalex_id"], desde),
         "per_page": 1,
         "select": "id",
     }
@@ -548,7 +548,7 @@ def contar_obras(nodo, api_key):
     return result.get("meta", {}).get("count", 0)
 
 
-def extraer_nodo(conn, nodo, nodos_por_institucion, api_key, modo, limite=None):
+def extraer_nodo(conn, nodo, nodos_por_institucion, api_key, modo, desde, limite=None):
     checkpoint = inicializar_checkpoint(conn, nodo["nodo_id"], modo)
     cursor, completado, ya_procesadas = checkpoint
     if completado:
@@ -569,7 +569,7 @@ def extraer_nodo(conn, nodo, nodos_por_institucion, api_key, modo, limite=None):
     cursor = cursor or "*"
     while True:
         params = {
-            "filter": filtro_nodo(nodo["openalex_id"]),
+            "filter": filtro_nodo(nodo["openalex_id"], desde),
             "cursor": cursor,
             "per_page": per_page,
             "select": SELECT_OBRAS,
@@ -659,13 +659,13 @@ def imprimir_omitidos(omitidos):
         print(f"- {nombre}: {motivo}")
 
 
-def ejecutar_conteo(nodos, omitidos, api_key):
-    print("\nNodo | Obras desde 2019-01-01")
+def ejecutar_conteo(nodos, omitidos, api_key, desde):
+    print(f"\nNodo | Obras desde {desde}")
     print("-" * 72)
     total = 0
     for nodo in nodos:
         try:
-            count = contar_obras(nodo, api_key)
+            count = contar_obras(nodo, api_key, desde)
             total += count
             print(f"{nodo['nombre']} | {count}")
         except Exception as error:
@@ -681,8 +681,17 @@ def main():
     modos.add_argument("--conteo", action="store_true", help="Consulta solo meta.count por nodo")
     modos.add_argument("--prueba", metavar="NODO", help="Extrae hasta 50 obras de un nodo (nodo_id, OpenAlex ID o nombre)")
     modos.add_argument("--completo", action="store_true", help="Extrae todas las obras desde 2019; no ejecutar sin autorización explícita")
+    parser.add_argument("--desde", default=DESDE, metavar="AAAA-MM-DD", help="Fecha inicial de publicación (por defecto: 2019-01-01)")
     parser.add_argument("--nodos", type=Path, default=ARCHIVO_NODOS, help="CSV de nodos; por defecto nodos.csv junto al script")
     args = parser.parse_args()
+
+    try:
+        fecha_desde = datetime.strptime(args.desde, "%Y-%m-%d").date()
+        if fecha_desde.isoformat() != args.desde:
+            raise ValueError
+    except ValueError:
+        print(f"Fecha inválida para --desde: {args.desde!r}. Usa el formato AAAA-MM-DD, por ejemplo 2019-01-01.")
+        return 2
 
     api_key = os.getenv("OPENALEX_API_KEY", "").strip()
     try:
@@ -693,7 +702,7 @@ def main():
 
     imprimir_omitidos(omitidos)
     if args.conteo:
-        ejecutar_conteo(nodos, omitidos, api_key)
+        ejecutar_conteo(nodos, omitidos, api_key, fecha_desde.isoformat())
         return 0
 
     if not api_key:
@@ -727,7 +736,8 @@ def main():
         for nodo in nodos_objetivo:
             try:
                 extraer_nodo(
-                    conn, nodo, nodos_por_institucion, api_key, modo, limite=limite
+                    conn, nodo, nodos_por_institucion, api_key, modo,
+                    fecha_desde.isoformat(), limite=limite
                 )
             except Exception as error:
                 print(f"Error en nodo {nodo['nombre']}: {error}")

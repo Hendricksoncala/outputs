@@ -41,7 +41,8 @@ def obtener_institucion(openalex_id, api_key):
 
 
 def main():
-    api_key = "R1O9GVmiIE99uEncU928ck"#-----
+    #api de openalex 
+    api_key = os.getenv("OPENALEX_API_KEY", "").strip()
     if not api_key:
         print("Configura la variable de entorno OPENALEX_API_KEY antes de validar IDs.")
         return

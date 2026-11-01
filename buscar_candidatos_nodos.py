@@ -67,7 +67,7 @@ def fila_candidato(semilla, candidato):
 
 
 def main():
-    api_key = "R1O9GVmiIE99uEncU928ck"
+    api_key = os.getenv("OPENALEX_API_KEY", "").strip()
     if not api_key:
         print("OPENALEX_API_KEY no está definida; haré consultas básicas sin clave.")
     if not ENTRADA.is_file():
