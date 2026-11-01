@@ -681,6 +681,7 @@ def main():
     modos.add_argument("--conteo", action="store_true", help="Consulta solo meta.count por nodo")
     modos.add_argument("--prueba", metavar="NODO", help="Extrae hasta 50 obras de un nodo (nodo_id, OpenAlex ID o nombre)")
     modos.add_argument("--completo", action="store_true", help="Extrae todas las obras desde 2019; no ejecutar sin autorización explícita")
+    parser.add_argument("--grupo", choices=("nucleo", "universidad", "internacional", "todos"), default="nucleo", help="Grupo de nodos que se procesará (por defecto: nucleo)")
     parser.add_argument("--desde", default=DESDE, metavar="AAAA-MM-DD", help="Fecha inicial de publicación (por defecto: 2019-01-01)")
     parser.add_argument("--nodos", type=Path, default=ARCHIVO_NODOS, help="CSV de nodos; por defecto nodos.csv junto al script")
     args = parser.parse_args()
@@ -699,6 +700,9 @@ def main():
     except (OSError, csv.Error, ValueError) as error:
         print(f"No se pudo cargar el CSV de nodos: {error}")
         return 2
+
+    if args.grupo != "todos":
+        nodos = [nodo for nodo in nodos if nodo["grupo"].casefold() == args.grupo]
 
     imprimir_omitidos(omitidos)
     if args.conteo:
@@ -725,6 +729,20 @@ def main():
         modo = "completo"
         ruta_db = DB_COMPLETA
         limite = None
+
+        if args.grupo == "todos":
+            estimado = 0
+            try:
+                for nodo in nodos_objetivo:
+                    estimado += contar_obras(nodo, api_key, fecha_desde.isoformat())
+            except Exception as error:
+                print(f"No se pudo estimar el total de obras; extracción cancelada: {error}")
+                return 2
+            print(f"Total estimado de obras (suma por nodo; obras compartidas pueden contarse más de una vez): {estimado}")
+            confirmacion = input("Escribe CONFIRMAR para iniciar la extracción completa de todos los grupos: ").strip()
+            if confirmacion != "CONFIRMAR":
+                print("Extracción cancelada: no se recibió la confirmación escrita.")
+                return 0
 
     if not nodos_objetivo:
         print("No hay nodos con OpenAlex ID válido para extraer.")
