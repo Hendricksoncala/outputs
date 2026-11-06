@@ -1,0 +1,16 @@
+﻿institucion_openalex_id,nombre,ror,tipo,pais,n_obras,grado,grado_ponderado,intermediacion,comunidad,es_nucleo
+https://openalex.org/I36243813,Universidad Nacional de Colombia,https://ror.org/059yx9a68,education,CO,828,1251,828.0000000000001,0.5298041213226005,4,False
+https://openalex.org/I4210131753,Corporación Colombiana de Investigación Agropecuaria – AGROSAVIA,https://ror.org/03d0jkp23,nonprofit,CO,2633,1429,1665.0,0.5268094524387034,4,True
+https://openalex.org/I2799870028,Alexander von Humboldt Biological Resources Research Institute,https://ror.org/026dk4f10,facility,CO,983,1623,776.0,0.48515341344979723,1,True
+https://openalex.org/I4210113154,José Benito Vives de Andréis Marine and Coastal Research Institute,https://ror.org/024109974,facility,CO,318,475,261.0,0.10426879100321468,2,True
+https://openalex.org/I2802618504,Instituto Sinchi,https://ror.org/04dmckt32,facility,CO,350,694,300.0,0.07691779516793769,1,True
+https://openalex.org/I1294671590,Centre National de la Recherche Scientifique,https://ror.org/02feahw73,government,FR,131,1115,131.0,0.032732791412239615,7,False
+https://openalex.org/I17974374,Universidade de São Paulo,https://ror.org/036rp1748,education,BR,146,1000,146.0,0.018386657907905436,1,False
+https://openalex.org/I151201029,Consejo Nacional de Investigaciones Científicas y Técnicas,https://ror.org/03cqe8w59,government,AR,70,846,70.0,0.01549953835368395,5,False
+https://openalex.org/I134820265,Consejo Superior de Investigaciones Científicas,https://ror.org/02gfc7t72,government,ES,67,689,67.0,0.01370989569734494,9,False
+https://openalex.org/I4210159669,Centro de Investigación de la Caña de Azúcar de Colombia,https://ror.org/0510ctm72,nonprofit,CO,86,116,69.0,0.013275808079210355,4,True
+https://openalex.org/I8961855,Universidad Nacional Autónoma de México,https://ror.org/01tmp8f25,education,MX,98,877,98.0,0.013164233863072939,1,False
+https://openalex.org/I35961687,Universidad de Antioquia,https://ror.org/03bp5hc83,education,CO,219,439,219.00000000000003,0.013070371257029586,4,False
+https://openalex.org/I4387153640,Centro Nacional de Investigaciones de Café,https://ror.org/03q60bw50,nonprofit,CO,532,134,126.0,0.012912262640128116,3,True
+https://openalex.org/I131077856,Centre de Coopération Internationale en Recherche Agronomique pour le Développement,https://ror.org/05kpkpg04,facility,FR,102,496,102.0,0.012584941754471507,4,False
+https://openalex.org/I33213144,University of Florida,https://ror.org/02y3ad647,education,US,118,884,118.0,0.010247529142466119,7,False

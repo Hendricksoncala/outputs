@@ -1,0 +1,982 @@
+﻿financiador_id,nombre,n_obras,n_awards,n_bpin
+https://openalex.org/F4320329917,Corporación colombiana de investigación agropecuaria,463,15,1
+https://openalex.org/F4320321580,Ministerio de Agricultura y Desarrollo Rural,223,38,1
+https://openalex.org/F4320317169,"Corporación Colombiana de Investigación Agropecuaria, AGROSAVIA",176,14,1
+https://openalex.org/F4320309955,"Departamento Administrativo de Ciencia, Tecnología e Innovación (COLCIENCIAS)",156,49,0
+https://openalex.org/F4320321458,Universidad Nacional de Colombia,145,9,0
+https://openalex.org/F4320322025,Conselho Nacional de Desenvolvimento Científico e Tecnológico,123,217,0
+https://openalex.org/F3277441329,"Ministerio de Ciencia, Tecnología e Innovación",112,27,6
+https://openalex.org/F4320321091,Coordenação de Aperfeiçoamento de Pessoal de Nível Superior,102,69,0
+https://openalex.org/F4320306076,National Science Foundation,94,115,0
+https://openalex.org/F4320329142,Instituto de Investigaciones Marinas y Costeras,89,7,6
+https://openalex.org/F4320320997,Fundação de Amparo à Pesquisa do Estado de São Paulo,82,159,0
+https://openalex.org/F4320320300,European Commission,78,90,0
+https://openalex.org/F4320319122,Centro Nacional de Investigaciones de Café,76,30,0
+https://openalex.org/F4320327969,Sistema General de Regalías de Colombia,73,18,27
+https://openalex.org/F4320334631,Natural Environment Research Council,56,110,0
+https://openalex.org/F4320323197,Universidad de Antioquia,56,9,0
+https://openalex.org/F4320320883,Agence Nationale de la Recherche,47,46,0
+https://openalex.org/F4320336575,Ministry of Environment and Sustainable Development,42,3,5
+https://openalex.org/F4320306114,U.S. Department of Agriculture,42,13,0
+https://openalex.org/F4320330846,Instituto de Investigación de Recursos Biológicos Alexander von Humboldt,41,1,0
+https://openalex.org/F4320321992,"Ministério da Ciência, Tecnologia e Inovação",33,8,0
+https://openalex.org/F4320306101,National Aeronautics and Space Administration,32,19,0
+https://openalex.org/F4320324565,Universidad de Caldas,30,3,0
+https://openalex.org/F4320322581,Vetenskapsrådet,29,18,0
+https://openalex.org/F4320332299,National Institute of Food and Agriculture,28,23,0
+https://openalex.org/F4320321739,Consejo Nacional de Ciencia y Tecnología,27,34,0
+https://openalex.org/F4320306083,Smithsonian Institution,26,0,0
+https://openalex.org/F4320322007,Ministry of Environment,25,2,2
+https://openalex.org/F4320320879,Deutsche Forschungsgemeinschaft,24,27,0
+https://openalex.org/F4320325859,Pontificia Universidad Javeriana,22,9,0
+https://openalex.org/F4320324328,Universidad del Valle,22,0,0
+https://openalex.org/F4320323299,Norges Forskningsråd,20,7,0
+https://openalex.org/F4320323616,Universidad de los Andes,20,7,0
+https://openalex.org/F4320334629,Biotechnology and Biological Sciences Research Council,19,32,0
+https://openalex.org/F4320329182,Consortium of International Agricultural Research Centers,18,0,0
+https://openalex.org/F4320332167,Directorate for Biological Sciences,18,3,0
+https://openalex.org/F4320332161,National Institutes of Health,18,8,0
+https://openalex.org/F4320320924,Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung,18,16,0
+https://openalex.org/F4320332808,Smithsonian Tropical Research Institute,18,0,0
+https://openalex.org/F4320321033,Svenska Forskningsrådet Formas,18,16,0
+https://openalex.org/F4320335322,European Regional Development Fund,17,32,0
+https://openalex.org/F4320332999,Horizon 2020 Framework Programme,17,17,0
+https://openalex.org/F4320319990,National Institute for Health and Care Research,17,4,0
+https://openalex.org/F4320325610,Universidad Industrial de Santander,17,1,0
+https://openalex.org/F4320306137,Bill and Melinda Gates Foundation,16,7,0
+https://openalex.org/F4320306202,Gordon and Betty Moore Foundation,16,3,0
+https://openalex.org/F4320306115,United States Agency for International Development,16,5,0
+https://openalex.org/F4320320290,University of Oxford,16,0,0
+https://openalex.org/F4320334704,Australian Research Council,15,31,0
+https://openalex.org/F4320334779,Fundação para a Ciência e a Tecnologia,15,56,0
+https://openalex.org/F4320318904,Universidad del Tolima,15,1,0
+https://openalex.org/F4320332605,Agricultural Research Service,14,5,0
+https://openalex.org/F4320324242,Ecopetrol,14,0,0
+https://openalex.org/F4320338335,H2020 European Research Council,14,10,0
+https://openalex.org/F4320309024,National Geographic Society,14,5,0
+https://openalex.org/F4320314731,UK Research and Innovation,14,13,0
+https://openalex.org/F4320331146,Agencia Nacional de Investigación y Desarrollo,13,22,0
+https://openalex.org/F4320321114,Bundesministerium für Bildung und Forschung,13,11,0
+https://openalex.org/F4320324228,Centre de Coopération Internationale en Recherche Agronomique pour le Développement,13,1,0
+https://openalex.org/F4320324221,Instituto Nacional de Pesquisas da Amazônia,13,1,0
+https://openalex.org/F4320322930,Ministerio de Ciencia e Innovación,13,21,0
+https://openalex.org/F4320337354,National Institute of General Medical Sciences,13,11,0
+https://openalex.org/F4320334593,Natural Sciences and Engineering Research Council of Canada,13,11,0
+https://openalex.org/F4320322892,Centre National de la Recherche Scientifique,12,3,0
+https://openalex.org/F4320321594,Consejo Nacional de Investigaciones Científicas y Técnicas,12,4,0
+https://openalex.org/F4320320875,Deutscher Akademischer Austauschdienst,12,3,0
+https://openalex.org/F4320334626,Medical Research Council,12,10,0
+https://openalex.org/F4320321837,Ministerio de Economía y Competitividad,12,5,0
+https://openalex.org/F4320306084,U.S. Department of Energy,12,12,0
+https://openalex.org/F4320323401,Universidad Nacional Autónoma de México,12,8,0
+https://openalex.org/F4320330047,Universidad de Nariño,12,0,0
+https://openalex.org/F4320308866,Wildlife Conservation Society,12,0,0
+https://openalex.org/F4320335598,Agencia Estatal de Investigación,11,18,0
+https://openalex.org/F4320318789,Biodiversa+,11,2,0
+https://openalex.org/F4320335100,"Dirección General de Asuntos del Personal Académico, Universidad Nacional Autónoma de México",11,10,0
+https://openalex.org/F4320323205,Fundação de Amparo à Pesquisa do Estado de Mato Grosso,11,5,0
+https://openalex.org/F4320322980,Fundação de Amparo à Pesquisa do Estado de Minas Gerais,11,10,0
+https://openalex.org/F4320328732,Instituto Colombiano de Crédito Educativo y Estudios Técnicos en el Exterior,11,3,0
+https://openalex.org/F4320321800,Nederlandse Organisatie voor Wetenschappelijk Onderzoek,11,10,0
+https://openalex.org/F4320309818,Rufford Foundation,11,9,0
+https://openalex.org/F4320328644,Agencia Nacional de Hidrocarburos,10,0,0
+https://openalex.org/F4320322679,International Atomic Energy Agency,10,3,0
+https://openalex.org/F4320334764,Japan Society for the Promotion of Science,10,12,0
+https://openalex.org/F4320332181,National Oceanic and Atmospheric Administration,10,1,0
+https://openalex.org/F4320314236,Universidad EAFIT,10,2,0
+https://openalex.org/F4320325879,Universidade Estadual Paulista,10,1,0
+https://openalex.org/F4320309931,AgResearch,9,0,0
+https://openalex.org/F4320334857,Consejo Superior de Investigaciones Científicas,9,9,0
+https://openalex.org/F4320320283,Imperial College London,9,0,0
+https://openalex.org/F4320307862,Inter-American Development Bank,9,2,0
+https://openalex.org/F4320327335,"Ministério da Ciência, Tecnologia, Inovações e Comunicações",9,6,1
+https://openalex.org/F4320322037,Nuclear Safety and Security Commission,9,0,0
+https://openalex.org/F4320326542,Universidad de La Sabana,9,4,0
+https://openalex.org/F4320329546,Universidad del Magdalena,9,0,0
+https://openalex.org/F4320320984,University of Queensland,9,1,0
+https://openalex.org/F4320306146,Andrew W. Mellon Foundation,8,0,0
+https://openalex.org/F4320330723,Deutsches Zentrum für integrative Biodiversitätsforschung Halle-Jena-Leipzig,8,3,0
+https://openalex.org/F4320337400,Division of Environmental Biology,8,9,0
+https://openalex.org/F4320321675,Empresa Brasileira de Pesquisa Agropecuária,8,6,0
+https://openalex.org/F4320322994,Fundação de Amparo à Pesquisa do Estado do Amazonas,8,3,0
+https://openalex.org/F4320307117,HSBC Bank USA,8,0,0
+https://openalex.org/F4320309547,Idea Wild,8,2,0
+https://openalex.org/F4320335425,Instituto Chico Mendes de Conservação da Biodiversidade,8,0,0
+https://openalex.org/F4320306142,John D. and Catherine T. MacArthur Foundation,8,2,0
+https://openalex.org/F4320319993,Leverhulme Trust,8,5,0
+https://openalex.org/F4320332478,U.S. Forest Service,8,0,0
+https://openalex.org/F4320325299,Universidad de Córdoba,8,0,0
+https://openalex.org/F4320323339,Universidade de São Paulo,8,0,0
+https://openalex.org/F4320311904,Wellcome Trust,8,3,0
+https://openalex.org/F4320308347,Brigham and Women's Hospital,7,0,0
+https://openalex.org/F4320313925,De La Salle University,7,0,0
+https://openalex.org/F4320312592,Global Environment Facility,7,3,0
+https://openalex.org/F4320322739,Ministry of Agriculture and Rural Development,7,2,0
+https://openalex.org/F4320322582,Sveriges Lantbruksuniversitet,7,0,0
+https://openalex.org/F4320318971,Universidad de Santander,7,2,1
+https://openalex.org/F4320334952,Wageningen University and Research,7,0,0
+https://openalex.org/F4320320025,British Council,6,2,0
+https://openalex.org/F4320323242,Centro Internacional de Agricultura Tropical,6,0,0
+https://openalex.org/F4320321637,Department for International Development,6,0,0
+https://openalex.org/F4320321090,Eesti Teadusagentuur,6,15,0
+https://openalex.org/F4320329916,Empresa Colombiana De Productos Veterinarios,6,0,0
+https://openalex.org/F4320338073,Fondo Nacional de Desarrollo Científico y Tecnológico,6,4,0
+https://openalex.org/F4320322502,Fundação de Amparo à Pesquisa do Estado do Rio Grande do Sul,6,0,0
+https://openalex.org/F4320323354,"Fundação de Apoio ao Desenvolvimento do Ensino, Ciência e Tecnologia do Estado de Mato Grosso do Sul",6,10,0
+https://openalex.org/F4320321505,Generalitat de Catalunya,6,10,0
+https://openalex.org/F4320309969,Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria,6,1,0
+https://openalex.org/F4320319949,International Development Research Centre,6,1,0
+https://openalex.org/F4320322434,Max-Planck-Gesellschaft,6,2,0
+https://openalex.org/F4320315062,"Ministerio de Ciencia, Innovación y Universidades",6,3,0
+https://openalex.org/F4320325957,Novo Nordisk Fonden,6,1,0
+https://openalex.org/F4320316420,United Nations Development Programme,6,0,0
+https://openalex.org/F4320331021,Universidad de Bogotá Jorge Tadeo Lozano,6,0,0
+https://openalex.org/F4320331629,Universidad de Ciencias Aplicadas y Ambientales,6,0,0
+https://openalex.org/F4320323364,Universidad del Cauca,6,2,0
+https://openalex.org/F4320306557,World Wildlife Fund,6,1,0
+https://openalex.org/F4320308380,Yale University,6,0,0
+https://openalex.org/F4320313729,Yale-NUS College,6,1,0
+https://openalex.org/F4320309928,Aarhus Universitet,5,0,0
+https://openalex.org/F4320308269,Alexander von Humboldt-Stiftung,5,0,0
+https://openalex.org/F4320337509,Biological and Environmental Research,5,2,0
+https://openalex.org/F4320322725,China Scholarship Council,5,2,0
+https://openalex.org/F4320338362,FP7 International Cooperation,5,0,0
+https://openalex.org/F4320322904,Financiadora de Estudos e Projetos,5,10,0
+https://openalex.org/F4320330526,Gobernación de Boyacá,5,0,0
+https://openalex.org/F4320331560,"Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement",5,0,0
+https://openalex.org/F4320331273,Liber Ero Foundation,5,0,0
+https://openalex.org/F4320323737,Ministerio de Ciencia y Tecnología,5,2,0
+https://openalex.org/F4320321664,"Ministerio de Ciencia, Tecnología e Innovación Productiva",5,2,1
+https://openalex.org/F4320331151,Ministerul Agriculturii și Dezvoltarii Rurale,5,0,0
+https://openalex.org/F4320312420,Newton Fund,5,7,0
+https://openalex.org/F4320310831,Northern Arizona University,5,0,0
+https://openalex.org/F4320322436,Novo Nordisk,5,1,0
+https://openalex.org/F4320332359,Office of Science,5,7,0
+https://openalex.org/F4320332183,U.S. Geological Survey,5,0,0
+https://openalex.org/F4320318903,Universidad Pedagógica y Tecnológica de Colombia,5,0,0
+https://openalex.org/F4320326549,Universidad San Francisco de Quito,5,5,0
+https://openalex.org/F6989785695,Universidad de la Amazonia,5,0,0
+https://openalex.org/F4320330317,Universidad de los Llanos,5,0,0
+https://openalex.org/F4320317143,Universidade Federal Rural da Amazônia,5,0,0
+https://openalex.org/F4320318869,Universidade Federal do Amazonas,5,0,0
+https://openalex.org/F4320326826,Universitat Autònoma de Barcelona,5,1,0
+https://openalex.org/F4320323428,Universitat de Barcelona,5,1,0
+https://openalex.org/F4320321008,Universiteit van Amsterdam,5,0,0
+https://openalex.org/F4320320273,University of Cambridge,5,0,0
+https://openalex.org/F4320309568,University of Missouri,5,0,0
+https://openalex.org/F4320309198,Utah State University,5,0,0
+https://openalex.org/F4320307856,World Health Organization,5,1,0
+https://openalex.org/F4320334832,Agencia Nacional de Promoción Científica y Tecnológica,4,5,0
+https://openalex.org/F4320308760,American Museum of Natural History,4,0,0
+https://openalex.org/F4320332778,Animal and Plant Health Inspection Service,4,3,0
+https://openalex.org/F4320309938,"Centre of Excellence for Environmental Decisions, Australian Research Council",4,2,0
+https://openalex.org/F4320317166,Comisión Nacional Forestal,4,0,0
+https://openalex.org/F4320313831,Comunidad de Madrid,4,2,0
+https://openalex.org/F4320326821,Deutsche Gesellschaft für Internationale Zusammenarbeit,4,1,0
+https://openalex.org/F4320325263,Environment and Climate Change Canada,4,0,0
+https://openalex.org/F4320321705,Eusko Jaurlaritza,4,5,0
+https://openalex.org/F4320338352,FP7 Ideas: European Research Council,4,2,0
+https://openalex.org/F4320321730,Fonds Wetenschappelijk Onderzoek,4,5,0
+https://openalex.org/F4320328425,Fulbright Colombia,4,1,0
+https://openalex.org/F4320322749,Fundação Carlos Chagas Filho de Amparo à Pesquisa do Estado do Rio de Janeiro,4,1,0
+https://openalex.org/F4320334322,HORIZON EUROPE Framework Programme,4,6,0
+https://openalex.org/F4320309622,Harvard University,4,0,0
+https://openalex.org/F7838025425,Instituto Colombiano Agropecuario,4,3,0
+https://openalex.org/F4320330123,Instituto Tecnológico Metropolitano,4,1,0
+https://openalex.org/F4320332375,Jet Propulsion Laboratory,4,1,0
+https://openalex.org/F4320334763,Leibniz-Gemeinschaft,4,0,0
+https://openalex.org/F4320321806,Lunds Universitet,4,0,0
+https://openalex.org/F4320326262,"Ministerio de Asuntos Económicos y Transformación Digital, Gobierno de España",4,7,0
+https://openalex.org/F4320322724,"Ministry of Education, India",4,1,0
+https://openalex.org/F4320332386,National Museum of Natural History,4,0,0
+https://openalex.org/F4320332542,National Park Service,4,0,0
+https://openalex.org/F4320320671,National Research Foundation,4,0,0
+https://openalex.org/F4320316156,New Zealand Government,4,0,0
+https://openalex.org/F4320310419,Pennsylvania State University,4,0,0
+https://openalex.org/F4320306113,U.S. Department of State,4,0,0
+https://openalex.org/F4320306107,U.S. Environmental Protection Agency,4,1,0
+https://openalex.org/F4320332182,U.S. Fish and Wildlife Service,4,1,0
+https://openalex.org/F4320327943,Universidad de Ibagué,4,1,0
+https://openalex.org/F4320325380,Universidad del Rosario,4,1,0
+https://openalex.org/F4320329417,Universidade Federal de Mato Grosso do Sul,4,0,0
+https://openalex.org/F4320324369,Universidade Federal de Minas Gerais,4,0,0
+https://openalex.org/F4320316427,Universidade Federal de Viçosa,4,0,0
+https://openalex.org/F4320321010,Universiteit Utrecht,4,0,0
+https://openalex.org/F4320310017,University of Connecticut,4,0,0
+https://openalex.org/F4320332222,University of Illinois at Urbana-Champaign,4,0,0
+https://openalex.org/F4320320298,University of Leeds,4,3,0
+https://openalex.org/F4320320291,University of Manchester,4,0,0
+https://openalex.org/F4320309636,University of Minnesota,4,0,0
+https://openalex.org/F4320309370,University of Pennsylvania,4,0,0
+https://openalex.org/F4320324119,Uppsala Universitet,4,0,0
+https://openalex.org/F4320310490,Villum Fonden,4,4,0
+https://openalex.org/F4320327336,Vlaamse regering,4,0,0
+https://openalex.org/F4320307855,World Bank Group,4,3,0
+https://openalex.org/F4320320032,Aberystwyth University,3,0,0
+https://openalex.org/F4320321108,Academy of Finland,3,5,0
+https://openalex.org/F4320310753,Agencia Nacional de Investigación e Innovación,3,1,0
+https://openalex.org/F4320334595,Agriculture and Agri-Food Canada,3,0,0
+https://openalex.org/F4320331557,Analyses et Expérimentations pour les Ecosystèmes,3,2,0
+https://openalex.org/F4320309904,Auburn University,3,0,0
+https://openalex.org/F4320308506,Bat Conservation International,3,1,0
+https://openalex.org/F4320307771,Bayer,3,1,0
+https://openalex.org/F4320336060,"Bundesministerium für Umwelt, Naturschutz, nukleare Sicherheit und Verbraucherschutz",3,0,0
+https://openalex.org/F4320309398,California Institute of Technology,3,1,0
+https://openalex.org/F4320321133,Chinese Academy of Sciences,3,1,0
+https://openalex.org/F4320325880,Comunidad Autónoma de la Región de Murcia,3,0,0
+https://openalex.org/F4320310685,Conservation International,3,0,0
+https://openalex.org/F4320334176,Cornell Lab of Ornithology,3,0,0
+https://openalex.org/F4320312438,DigitalGlobe Foundation,3,0,0
+https://openalex.org/F4320334820,"Dirección de Investigación, Universidad Nacional de Colombia",3,0,0
+https://openalex.org/F4320334627,Engineering and Physical Sciences Research Council,3,3,0
+https://openalex.org/F4320334678,European Research Council,3,3,0
+https://openalex.org/F4320335096,"Facultad de Ciencias, Universidad de los Andes",3,2,0
+https://openalex.org/F4320311150,Field Museum,3,0,0
+https://openalex.org/F4320309993,Florida International University,3,0,0
+https://openalex.org/F4320324634,Fondo Nacional de Ciencia Tecnología e Innovación,3,0,0
+https://openalex.org/F4320337954,Fondo para la Investigación Científica y Tecnológica,3,5,0
+https://openalex.org/F4320310087,Fundación Séneca,3,0,0
+https://openalex.org/F4320326451,Fundación para el futuro de Colombia,3,1,0
+https://openalex.org/F4320323207,Fundação Amazônia Paraense de Amparo à Pesquisa,3,2,0
+https://openalex.org/F4320322772,Fundação Araucária,3,2,0
+https://openalex.org/F4320323349,Fundação de Amparo à Pesquisa e Inovação do Estado de Santa Catarina,3,1,0
+https://openalex.org/F4320314707,Government of the United Kingdom,3,0,0
+https://openalex.org/F4320323421,Göteborgs Universitet,3,0,0
+https://openalex.org/F4320335254,Horizon 2020,3,3,0
+https://openalex.org/F4320327465,ISAGEN Energía Productiva,3,0,0
+https://openalex.org/F4320313932,Institut de Recherche pour le Développement,3,0,0
+https://openalex.org/F4320324661,Instituto Venezolano de Investigaciones Científicas,3,0,0
+https://openalex.org/F4320326830,Inter-American Institute for Global Change Research,3,3,0
+https://openalex.org/F4320310395,Louisiana State University,3,0,0
+https://openalex.org/F4320311699,Manchester Metropolitan University,3,1,0
+https://openalex.org/F4320310638,McGill University,3,0,0
+https://openalex.org/F4320310866,Ministry of Agriculture - Saskatchewan,3,1,0
+https://openalex.org/F4320309637,Mississippi State University,3,0,0
+https://openalex.org/F4320327193,Mohamed bin Zayed Species Conservation Fund,3,2,0
+https://openalex.org/F4320337351,National Cancer Institute,3,2,0
+https://openalex.org/F4320337355,National Institute of Allergy and Infectious Diseases,3,1,0
+https://openalex.org/F4320321001,National Natural Science Foundation of China,3,4,0
+https://openalex.org/F4320322120,National Research Foundation of Korea,3,1,0
+https://openalex.org/F4320335353,National Science Foundation of Sri Lanka,3,5,0
+https://openalex.org/F4320314919,Neotropical Grassland Conservancy,3,0,0
+https://openalex.org/F4320309475,Northwestern University,3,0,0
+https://openalex.org/F4320307968,Panthera,3,0,0
+https://openalex.org/F4320307425,Primate Conservation,3,0,0
+https://openalex.org/F4320309036,Purdue University,3,0,0
+https://openalex.org/F4320320240,Research Councils UK,3,7,0
+https://openalex.org/F4320324900,Rheinische Friedrich-Wilhelms-Universität Bonn,3,0,0
+https://openalex.org/F4320306149,Rockefeller Foundation,3,0,0
+https://openalex.org/F4320320936,Royal Swedish Academy of Sciences,3,3,0
+https://openalex.org/F4320325669,Stockholms Universitet,3,0,0
+https://openalex.org/F4320307875,Styrelsen för Internationellt Utvecklingssamarbete,3,0,0
+https://openalex.org/F4320324717,Tartu Ülikool,3,1,0
+https://openalex.org/F4320321613,Technische Universität Dresden,3,0,0
+https://openalex.org/F4320308321,"United Nations Educational, Scientific and Cultural Organization",3,1,0
+https://openalex.org/F4320321168,Universidad ICESI,3,0,0
+https://openalex.org/F4320322227,Universidad Nacional de La Plata,3,4,0
+https://openalex.org/F4320323403,Universidad Politécnica de Cartagena,3,0,0
+https://openalex.org/F4320319861,Universidad Santiago de Cali,3,1,0
+https://openalex.org/F4320331104,Universidad Surcolombiana,3,0,0
+https://openalex.org/F4320323217,Universidad de Costa Rica,3,1,0
+https://openalex.org/F4320316911,Universidad del Quindío,3,0,0
+https://openalex.org/F4320331020,Universidade Estadual de Santa Cruz,3,0,0
+https://openalex.org/F4320319598,Universidade Federal do Acre,3,0,0
+https://openalex.org/F4320324376,Universidade Federal do Pará,3,0,0
+https://openalex.org/F4320325185,Universidade Federal do Rio Grande do Norte,3,0,0
+https://openalex.org/F4320310094,University of Washington,3,1,0
+https://openalex.org/F4320324041,Università degli Studi di Torino,3,0,0
+https://openalex.org/F4320331563,VLIRUOS,3,2,0
+https://openalex.org/F4320323782,Vlaamse Interuniversitaire Raad,3,1,0
+https://openalex.org/F4320309558,Wake Forest University,3,0,0
+https://openalex.org/F4320329153,World Agroforestry Centre,3,0,0
+https://openalex.org/F8151818886,XPRIZE,3,0,0
+https://openalex.org/F4320322381,A.G. Leventis Foundation,2,1,0
+https://openalex.org/F4320332223,Academy of Natural Sciences of Drexel University,2,0,0
+https://openalex.org/F4320327323,African Academy of Sciences,2,0,0
+https://openalex.org/F4320319253,Agenția Națională pentru Cercetare și Dezvoltare,2,0,0
+https://openalex.org/F4320332725,Alabama Agricultural Experiment Station,2,0,0
+https://openalex.org/F4320331257,Alliance de recherche numérique du Canada,2,0,0
+https://openalex.org/F4320332845,Arnold Arboretum,2,0,0
+https://openalex.org/F4320334609,Arts and Humanities Research Council,2,0,0
+https://openalex.org/F4320320431,Australian National University,2,0,0
+https://openalex.org/F4320321454,Belgian Federal Science Policy Office,2,8,0
+https://openalex.org/F4320331209,Bentham-Moxon Trust,2,1,0
+https://openalex.org/F4320309565,Boston University,2,0,0
+https://openalex.org/F4320323501,"Bundesministerium für Umwelt, Naturschutz, Bau und Reaktorsicherheit",2,0,0
+https://openalex.org/F4320338463,CHIST-ERA,2,0,0
+https://openalex.org/F4320325124,CYTED Ciencia y Tecnología para el Desarrollo,2,1,0
+https://openalex.org/F4320308298,California HIV/AIDS Research Program,2,1,0
+https://openalex.org/F4320319952,Canada Foundation for Innovation,2,4,0
+https://openalex.org/F4320321519,Centre National d’Etudes Spatiales,2,0,0
+https://openalex.org/F4320321017,Centre for International Forestry Research,2,0,0
+https://openalex.org/F4320323166,Chinese Academy of Tropical Agricultural Sciences,2,1,0
+https://openalex.org/F4320336557,Ciência sem Fronteiras,2,1,0
+https://openalex.org/F4320309106,Clemson University,2,0,0
+https://openalex.org/F4320309627,Colorado State University,2,0,0
+https://openalex.org/F4320334812,Comisión Nacional de Investigación Científica y Tecnológica,2,1,0
+https://openalex.org/F4320329719,"Comisión Nacional para el Conocimiento y Uso de la Biodiversidad, Gobierno de México",2,0,0
+https://openalex.org/F4320320386,Commonwealth Scientific and Industrial Research Organisation,2,0,0
+https://openalex.org/F4320336489,"Conselleria de Innovación, Universidades, Ciencia y Sociedad Digital, Generalitat Valenciana",2,1,0
+https://openalex.org/F4320307884,Conservation Leadership Programme,2,0,0
+https://openalex.org/F4320322651,Consiglio Nazionale delle Ricerche,2,0,0
+https://openalex.org/F4320327146,Coordination of European Transnational Research in Organic Food and Farming Systems,2,1,0
+https://openalex.org/F4320309624,Cornell University,2,0,0
+https://openalex.org/F4320331472,Courtois Foundation,2,0,0
+https://openalex.org/F4320320943,Danmarks Grundforskningsfond,2,2,0
+https://openalex.org/F4320306079,David and Lucile Packard Foundation,2,1,0
+https://openalex.org/F4320312933,"Department for Business, Energy and Industrial Strategy, UK Government",2,0,0
+https://openalex.org/F4320319996,"Department for International Development, UK Government",2,0,0
+https://openalex.org/F4320320719,"Department of Science and Technology, Ministry of Science and Technology, India",2,0,0
+https://openalex.org/F4320333277,Disney Conservation Fund,2,0,0
+https://openalex.org/F3710214856,Environmental System Science Data Infrastructure for a Virtual Ecosystem,2,1,0
+https://openalex.org/F4320335551,Erasmus+,2,0,0
+https://openalex.org/F4320328044,European Society for Evolutionary Biology,2,0,0
+https://openalex.org/F4320318240,European Space Agency,2,0,0
+https://openalex.org/F4320338462,European and Developing Countries Clinical Trials Partnership,2,1,0
+https://openalex.org/F4320321919,Euskal Herriko Unibertsitatea,2,1,0
+https://openalex.org/F4320314012,Fairchild Tropical Botanic Garden,2,0,0
+https://openalex.org/F4320325839,Federación Nacional de Cultivadores de Palma de Aceite,2,0,0
+https://openalex.org/F4320310801,Florida Atlantic University,2,0,0
+https://openalex.org/F4320313425,Florida Museum of Natural History,2,0,0
+https://openalex.org/F4320311063,Fondation Bertarelli,2,0,0
+https://openalex.org/F4320321735,Fondation pour la Recherche sur la Biodiversite,2,0,0
+https://openalex.org/F4320316371,Fundacion Araucaria,2,0,0
+https://openalex.org/F4320325354,Fundación Agencia Aragonesa para la Investigación y el Desarrollo,2,0,0
+https://openalex.org/F4320317587,Fundación CeiBA,2,0,0
+https://openalex.org/F4320323202,Fundação Cearense de Apoio ao Desenvolvimento Científico e Tecnológico,2,1,0
+https://openalex.org/F4320321887,Fundação de Amparo à Pesquisa do Estado de Alagoas,2,0,0
+https://openalex.org/F4320323204,Fundação de Amparo à Pesquisa do Estado de Goiás,2,4,0
+https://openalex.org/F4320323682,Fundação de Amparo à Pesquisa e Inovação do Espírito Santo,2,0,0
+https://openalex.org/F4320323355,"Fundação de Apoio ao Ensino, Pesquisa e Extensão de Itajubá",2,0,0
+https://openalex.org/F4320323350,Fundação de Apoio à Pesquisa do Distrito Federal,2,18,0
+https://openalex.org/F4320322964,Fundação de Ensino e Pesquisa de Uberaba,2,0,0
+https://openalex.org/F4320321864,Generalitat Valenciana,2,1,0
+https://openalex.org/F4320316481,Global Challenges Research Fund,2,0,0
+https://openalex.org/F4320321178,Governo Brasil,2,0,0
+https://openalex.org/F4320310266,Grantham Foundation for the Protection of the Environment,2,0,0
+https://openalex.org/F4320322907,Gutenberg Forschungskolleg,2,0,0
+https://openalex.org/F4320338337,H2020 Marie Skłodowska-Curie Actions,2,4,0
+https://openalex.org/F4320338438,HORIZON EUROPE Marie Sklodowska-Curie Actions,2,1,0
+https://openalex.org/F4320314817,Heising-Simons Foundation,2,0,0
+https://openalex.org/F4320326118,Higher Committee for Education Development in Iraq,2,0,0
+https://openalex.org/F4320310326,Holsworth Wildlife Research Endowment,2,0,0
+https://openalex.org/F4320306082,Howard Hughes Medical Institute,2,1,0
+https://openalex.org/F4320333182,Huck Institutes of the Life Sciences,2,0,0
+https://openalex.org/F4320323700,Humboldt-Universität zu Berlin,2,0,0
+https://openalex.org/F4320320458,Ian Potter Foundation,2,0,0
+https://openalex.org/F4320322894,Institut Polaire Français Paul Emile Victor,2,0,0
+https://openalex.org/F4320333655,Institute for Critical Technology and Applied Science,2,0,0
+https://openalex.org/F4320323595,Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis,2,0,0
+https://openalex.org/F4320326732,Instituto Nacional de Investigaciones Agropecuarias,2,0,0
+https://openalex.org/F4320327341,"Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias",2,0,0
+https://openalex.org/F2743566649,Instituto Nacional de Salud,2,0,0
+https://openalex.org/F4320321694,Instituto Politécnico Nacional,2,0,0
+https://openalex.org/F4320332724,International Fund for Agricultural Development,2,0,0
+https://openalex.org/F4320320906,International Tropical Timber Organization,2,2,0
+https://openalex.org/F4320334789,Japan Science and Technology Agency,2,1,0
+https://openalex.org/F4320309799,John Merck Fund,2,0,0
+https://openalex.org/F4320316170,Joint Genome Institute,2,4,0
+https://openalex.org/F4320326754,Junta de Andalucía,2,3,0
+https://openalex.org/F4320319009,Leibniz-Zentrum für Marine Tropenforschung,2,0,0
+https://openalex.org/F4320322192,Magyar Tudományos Akadémia,2,0,0
+https://openalex.org/F4320332884,McDonnell Center for Systems Neuroscience,2,0,0
+https://openalex.org/F4320307764,Microsoft,2,1,0
+https://openalex.org/F4320320751,Ministry of Education - Singapore,2,2,0
+https://openalex.org/F4320322785,Mohammed bin Zayed Species Conservation Fund,2,0,0
+https://openalex.org/F4320324506,Muséum National d'Histoire Naturelle,2,0,0
+https://openalex.org/F4320332184,National Academy of Sciences,2,1,0
+https://openalex.org/F4320337357,National Institute of Diabetes and Digestive and Kidney Diseases,2,5,0
+https://openalex.org/F4320320758,National Parks Board - Singapore,2,0,0
+https://openalex.org/F4320336675,"National Research, Development and Innovation Office",2,0,0
+https://openalex.org/F4320327856,Naturalis Biodiversity Center,2,0,0
+https://openalex.org/F4320325808,New Zealand Agricultural Greenhouse Gas Research Centre,2,0,0
+https://openalex.org/F4320322443,Okinawa Institute of Science and Technology Graduate University,2,0,0
+https://openalex.org/F4320337770,Pacific Northwest Research Station,2,0,0
+https://openalex.org/F4320333249,Pan American Health Organization,2,0,0
+https://openalex.org/F4320327333,Pontificia Universidad Católica del Perú,2,0,0
+https://openalex.org/F4320316054,Pontifícia Universidade Católica de Minas Gerais,2,0,0
+https://openalex.org/F4320308734,"Puerto Rico Sea Grant, University of Puerto Rico",2,0,0
+https://openalex.org/F4320320006,Royal Society,2,0,0
+https://openalex.org/F4320324099,Russian Science Foundation,2,2,0
+https://openalex.org/F4320321655,Science and Technology Development Fund,2,0,0
+https://openalex.org/F4320324347,Secretaria Nacional de Ciencia y Tecnología,2,1,0
+https://openalex.org/F4320311777,Secretaría de Educación Pública,2,2,0
+https://openalex.org/F4320334960,Seventh Framework Programme,2,1,0
+https://openalex.org/F4320306192,Silicon Valley Community Foundation,2,0,0
+https://openalex.org/F4320332805,Smithsonian Conservation Biology Institute,2,0,0
+https://openalex.org/F4320334617,Social Sciences and Humanities Research Council of Canada,2,0,0
+https://openalex.org/F4320330232,Sorbonne Université,2,0,0
+https://openalex.org/F4320319619,Stichting het Kronendak,2,0,0
+https://openalex.org/F4320322600,Stiftelsen Lantbruksforskning,2,2,0
+https://openalex.org/F4320326748,Stiftung fiat panis,2,0,0
+https://openalex.org/F4320323722,Taif University,2,0,0
+https://openalex.org/F4320312387,Temple University,2,0,0
+https://openalex.org/F4320323313,Turun Yliopisto,2,0,0
+https://openalex.org/F4320306085,U.S. Department of Health and Human Services,2,2,0
+https://openalex.org/F4320306116,U.S. Department of the Interior,2,0,0
+https://openalex.org/F4320337372,U.S. National Library of Medicine,2,1,0
+https://openalex.org/F4320321585,Universidad Complutense de Madrid,2,0,0
+https://openalex.org/F4320330600,Universidad Cooperativa de ​Colo​mb​ia,2,0,0
+https://openalex.org/F4320329180,Universidad Militar Nueva Granada,2,1,0
+https://openalex.org/F3278013470,Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas,2,1,0
+https://openalex.org/F4320312064,Universidad Nacional de Córdoba,2,0,0
+https://openalex.org/F4320323717,Universidad de Concepción,2,1,0
+https://openalex.org/F4320317367,Universidad de Especialidades Espíritu Santo,2,0,0
+https://openalex.org/F4320323835,Universidad de Los Andes Venezuela,2,0,0
+https://openalex.org/F4320328733,Universidad de Sucre,2,0,0
+https://openalex.org/F4320317380,Universidad del Atlántico,2,0,0
+https://openalex.org/F4320323854,Universidade Estadual de Campinas,2,0,0
+https://openalex.org/F4320326433,Universidade Federal Fluminense,2,1,0
+https://openalex.org/F4320330029,Universidade Federal da Paraíba,2,0,0
+https://openalex.org/F4320329625,Universidade Federal de Alagoas,2,0,0
+https://openalex.org/F4320324901,Universidade Federal de Pernambuco,2,0,0
+https://openalex.org/F4320324147,Universidade Federal de Santa Catarina,2,0,0
+https://openalex.org/F4320331167,Universidade Tecnológica Federal do Paraná,2,0,0
+https://openalex.org/F4320323424,Universidade de Lisboa,2,0,0
+https://openalex.org/F4320313981,University of Cyprus,2,0,0
+https://openalex.org/F4320320274,University of East Anglia,2,0,0
+https://openalex.org/F4320320332,University of Edinburgh,2,0,0
+https://openalex.org/F4320309249,University of Miami,2,0,0
+https://openalex.org/F4320310805,University of Northern British Columbia,2,0,0
+https://openalex.org/F4320320324,University of Nottingham,2,0,0
+https://openalex.org/F4320320342,University of Sheffield,2,0,0
+https://openalex.org/F4320321096,University of Stirling,2,0,0
+https://openalex.org/F4320325052,Universität Duisburg-Essen,2,0,0
+https://openalex.org/F4320311402,Universität Hohenheim,2,0,0
+https://openalex.org/F4320324952,Université de Montpellier,2,0,0
+https://openalex.org/F4320320976,Victoria University,2,0,0
+https://openalex.org/F4320309913,Washington State University,2,0,0
+https://openalex.org/F4320309650,Washington University in St. Louis,2,0,0
+https://openalex.org/F4320311283,Zoological Society of London,2,0,0
+https://openalex.org/F4320321048,AXA Research Fund,1,0,0
+https://openalex.org/F4320321041,Academia Sinica,1,0,0
+https://openalex.org/F4320320241,Academy of Medical Sciences,1,0,0
+https://openalex.org/F4320327338,Académie de recherche et d'enseignement supérieur,1,0,0
+https://openalex.org/F4320335344,Advance Queensland,1,0,0
+https://openalex.org/F4320312587,"AgBioResearch, Michigan State University",1,1,0
+https://openalex.org/F4320326791,Agence Française de Développement,1,0,0
+https://openalex.org/F4320324026,Agence Nationale Des Parcs Nationaux,1,0,0
+https://openalex.org/F4320328415,Agence française pour la biodiversité,1,0,0
+https://openalex.org/F4320334954,Agencia Española de Cooperación Internacional para el Desarrollo,1,0,0
+https://openalex.org/F4320323186,AgroParisTech,1,0,0
+https://openalex.org/F4320309924,Agropolis Fondation,1,1,0
+https://openalex.org/F4320331726,Agroscope,1,0,0
+https://openalex.org/F4320334830,Agència de Gestió d'Ajuts Universitaris i de Recerca,1,5,0
+https://openalex.org/F4320324906,Agência Espacial Brasileira,1,1,0
+https://openalex.org/F4320316436,"Agência Regional para o Desenvolvimento da Investigação, Tecnologia e Inovação",1,3,0
+https://openalex.org/F4320322482,Akademie Věd České Republiky,1,0,0
+https://openalex.org/F4320313095,Alabama Department of Conservation and Natural Resources,1,0,0
+https://openalex.org/F4320321422,Alberta Livestock and Meat Agency,1,1,0
+https://openalex.org/F4320321790,Alfred Wegener Institute Helmholtz Centre for Polar and Marine Research,1,0,0
+https://openalex.org/F4320306593,Amazon Conservation Association,1,0,0
+https://openalex.org/F4320315905,American Society of Ichthyologists and Herpetologists,1,0,0
+https://openalex.org/F4320312020,American Society of Mammalogists,1,0,0
+https://openalex.org/F4320312031,American Society of Plant Taxonomists,1,0,0
+https://openalex.org/F4320311668,Andrews University,1,1,0
+https://openalex.org/F4320313262,Arcadia Fund,1,1,0
+https://openalex.org/F4320319864,ArcticNet,1,0,0
+https://openalex.org/F4320337221,"Artdatabanken, Sveriges Lantbruksuniversitet",1,1,0
+https://openalex.org/F4320329574,Association Neurofibromatoses et Recklinghause,1,0,0
+https://openalex.org/F4320310339,"Auckland University of Technology, New Zealand",1,0,0
+https://openalex.org/F4320311955,Australian Geographic Society,1,0,0
+https://openalex.org/F4320315885,Australian Government,1,0,0
+https://openalex.org/F4320310436,Australian Institute of Marine Science,1,0,0
+https://openalex.org/F4320320435,Australian Institute of Nuclear Science and Engineering,1,0,0
+https://openalex.org/F4320315471,Austrian Development Agency,1,0,0
+https://openalex.org/F4320321451,BC Hydro,1,0,0
+https://openalex.org/F4320321456,BNP Paribas Cardif,1,0,0
+https://openalex.org/F4320326273,Bayerisches Staatsministerium für Umwelt und Verbraucherschutz,1,0,0
+https://openalex.org/F4320306621,Belgian American Educational Foundation,1,0,0
+https://openalex.org/F4320323051,Ben-Gurion University of the Negev,1,0,0
+https://openalex.org/F4320333110,Berkeley Natural History Museums,1,0,0
+https://openalex.org/F4320312627,Biology Society of South Australia,1,0,0
+https://openalex.org/F4320320896,Bioversity International,1,0,0
+https://openalex.org/F4320315694,Bloomberg Philanthropies,1,0,0
+https://openalex.org/F4320308357,Boston College,1,0,0
+https://openalex.org/F4320323499,Bundesministerium für Ernährung und Landwirtschaft,1,0,0
+https://openalex.org/F4320323015,Bundesministerium für Forschung und Technologie,1,0,0
+https://openalex.org/F4320323883,Bundesministerium für Wirtschaftliche Zusammenarbeit und Entwicklung,1,1,0
+https://openalex.org/F4320325959,Busitema University,1,0,0
+https://openalex.org/F4320332632,California State University Long Beach,1,0,0
+https://openalex.org/F4320314594,Cambridge Philosophical Society,1,0,0
+https://openalex.org/F4320323942,Campus France,1,0,0
+https://openalex.org/F2829378333,Camões - Instituto da Cooperação e da Língua,1,0,0
+https://openalex.org/F4320326644,Canada First Research Excellence Fund,1,0,0
+https://openalex.org/F4320320994,Canada Research Chairs,1,0,0
+https://openalex.org/F4320315022,Canadian Museum of Nature,1,0,0
+https://openalex.org/F4320319985,Cancer Research UK,1,0,0
+https://openalex.org/F4320313362,Cape Eleuthera Foundation,1,0,0
+https://openalex.org/F4320321501,Carl Tryggers Stiftelse för Vetenskaplig Forskning,1,1,0
+https://openalex.org/F4320320174,Carnegie Trust for the Universities of Scotland,1,0,0
+https://openalex.org/F4320332646,Center for Visual Science,1,0,0
+https://openalex.org/F4320332162,Centers for Disease Control and Prevention,1,1,0
+https://openalex.org/F4677478294,Centre d'étude de la biodiversité amazonienne,1,16,0
+https://openalex.org/F4320338134,Centre for Ecology and Hydrology,1,1,0
+https://openalex.org/F8474834503,Centro Internacional de Métodos Numéricos en Ingeniería,1,0,0
+https://openalex.org/F4320316853,Centro Internacional de la Papa,1,0,0
+https://openalex.org/F4320334834,"Centro de Investigación Científica y de Educación Superior de Ensenada, Baja California",1,1,0
+https://openalex.org/F4320323918,"Centro de Pesquisas Aggeu Magalhães, Fundação Oswaldo Cruz",1,0,0
+https://openalex.org/F4320321043,Centro para el Desarrollo Tecnológico Industrial,1,0,0
+https://openalex.org/F4320309092,Cetacean Society International,1,0,0
+https://openalex.org/F4320307861,Charles Stewart Mott Foundation,1,0,0
+https://openalex.org/F4320321529,Chiang Mai University,1,0,0
+https://openalex.org/F4320321135,Chongqing University,1,0,0
+https://openalex.org/F4320322687,Chongqing University of Posts and Telecommunications,1,0,0
+https://openalex.org/F4320324522,Civil Aviation Administration of China,1,0,0
+https://openalex.org/F4320310288,Clarence Valley Council,1,0,0
+https://openalex.org/F4320331452,Cocoa Research Institute of Ghana,1,0,0
+https://openalex.org/F4320313589,Coins for Alzheimer's Research Trust,1,0,0
+https://openalex.org/F4320311883,Colby College,1,0,0
+https://openalex.org/F4320332912,"College of Agricultural Sciences, Pennsylvania State University",1,0,0
+https://openalex.org/F4320333851,"College of Agriculture, Purdue University",1,0,0
+https://openalex.org/F4320334555,"College of Earth and Mineral Sciences, Pennsylvania State University",1,1,0
+https://openalex.org/F4320332431,"College of Engineering, Michigan State University",1,0,0
+https://openalex.org/F4320332748,"College of Science and Engineering, University of Minnesota",1,0,0
+https://openalex.org/F4320316016,Colorado Mesa University,1,0,0
+https://openalex.org/F4320324217,"Comisión de Operación y Fomento de Actividades Académicas, Instituto Politécnico Nacional",1,0,0
+https://openalex.org/F4320313536,Commission for Environmental Cooperation,1,0,0
+https://openalex.org/F4320338403,Common Fund,1,0,0
+https://openalex.org/F4320314000,Compute Canada,1,0,0
+https://openalex.org/F4320321588,Concordia University,1,0,0
+https://openalex.org/F4320327974,Conseil Régional des Pays de la Loire,1,1,0
+https://openalex.org/F4320328088,"Consejo Nacional de Ciencia y Tecnología, Paraguay",1,0,0
+https://openalex.org/F4320326614,"Consejo Nacional de Ciencia, Tecnología e Innovación Tecnológica",1,0,0
+https://openalex.org/F4320330584,Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa,1,0,0
+https://openalex.org/F4320329545,Corporación Universitaria Minuto de Dios,1,0,0
+https://openalex.org/F4320319478,Corporación Universitaria Remington,1,0,0
+https://openalex.org/F4320332417,"Council on Ocean Affairs Science and Technology, California State University",1,0,0
+https://openalex.org/F4320323779,Covenant University,1,0,0
+https://openalex.org/F4320314473,Critical Ecosystem Partnership Fund,1,0,0
+https://openalex.org/F4320320987,Curtin University of Technology,1,0,0
+https://openalex.org/F4320310400,Dartmouth College,1,0,0
+https://openalex.org/F4320331788,Darwin Trust of Edinburgh,1,0,0
+https://openalex.org/F4320333413,"David R. Atkinson Center for a Sustainable Future , Cornell University",1,0,0
+https://openalex.org/F4320334355,"David Rockefeller Center for Latin American Studies, Harvard University",1,0,0
+https://openalex.org/F4320314720,David and Elaine Potter Foundation,1,0,0
+https://openalex.org/F4320320970,Deakin University,1,0,0
+https://openalex.org/F4320334874,Defense Acquisition Program Administration,1,0,0
+https://openalex.org/F552691243,"Departament de Recerca i Universitats, Generalitat de Catalunya",1,1,0
+https://openalex.org/F4320321085,"Department of Biodiversity, Conservation and Attractions",1,0,0
+https://openalex.org/F5906133356,"Department of Biomedical Engineering, Case Western Reserve University",1,0,0
+https://openalex.org/F4320313627,"Department of Conservation, New Zealand",1,0,0
+https://openalex.org/F4320324764,Department of Education and Training,1,2,0
+https://openalex.org/F4320322798,Department of Environment and Water,1,0,0
+https://openalex.org/F4320311447,"Department of Environment, Land, Water and Planning, State Government of Victoria",1,0,0
+https://openalex.org/F4320320432,"Department of Foreign Affairs and Trade, Australian Government",1,0,0
+https://openalex.org/F4320335348,"Department of Science, Information Technology and Innovation, Queensland Government",1,0,0
+https://openalex.org/F4320320065,Diabetes UK,1,0,0
+https://openalex.org/F4320335086,Direction Générale de l’Armement,1,1,0
+https://openalex.org/F4320332171,Directorate for Geosciences,1,0,0
+https://openalex.org/F4320333583,Directorate-General for International Partnerships,1,0,0
+https://openalex.org/F4320332770,Direktion für Entwicklung und Zusammenarbeit,1,0,0
+https://openalex.org/F4320332589,Direktoratet for Utviklingssamarbeid,1,0,0
+https://openalex.org/F4320332673,Disney Worldwide Conservation Fund,1,0,0
+https://openalex.org/F4320337405,Division of Behavioral and Cognitive Sciences,1,1,0
+https://openalex.org/F4320337399,Division of Integrative Organismal Systems,1,1,0
+https://openalex.org/F4320337367,Division of Materials Research,1,2,0
+https://openalex.org/F4320313482,Douglas Bomford Trust,1,0,0
+https://openalex.org/F4320326719,Drainage Services Department,1,0,0
+https://openalex.org/F4320310343,Drexel University,1,0,0
+https://openalex.org/F4320309133,Duke University,1,0,0
+https://openalex.org/F4320327714,ETH Zürich Foundation,1,0,0
+https://openalex.org/F4320320988,Edith Cowan University,1,0,0
+https://openalex.org/F4320330813,Egerton University,1,0,0
+https://openalex.org/F4320321652,Eidgenössische Technische Hochschule Zürich,1,0,0
+https://openalex.org/F4320316606,Elizabeth Dole Foundation,1,0,0
+https://openalex.org/F4320337084,Embrapa Florestas,1,0,0
+https://openalex.org/F4320330686,Embrapa Recursos Genéticos e Biotecnologia,1,0,0
+https://openalex.org/F4320318856,Escuela Superior Politécnica del Litoral,1,0,0
+https://openalex.org/F4320334989,Estonian Research Competency Council,1,1,0
+https://openalex.org/F4320329018,Ethereum Foundation,1,0,0
+https://openalex.org/F4320337611,Eunice Kennedy Shriver National Institute of Child Health and Human Development,1,2,0
+https://openalex.org/F4320313288,European Bioinformatics Institute,1,0,0
+https://openalex.org/F4320314023,European Molecular Biology Laboratory,1,0,0
+https://openalex.org/F4320307844,European Molecular Biology Organization,1,0,0
+https://openalex.org/F4320307256,Explorers Club,1,0,0
+https://openalex.org/F4320338019,FP7 Coordination of Research Activities,1,0,0
+https://openalex.org/F4320338366,"FP7 Food, Agriculture and Fisheries, Biotechnology",1,0,0
+https://openalex.org/F4320338368,FP7 People: Marie-Curie Actions,1,3,0
+https://openalex.org/F4320332618,Faculty of Arts and Sciences,1,0,0
+https://openalex.org/F4320309161,Fairleigh Dickinson University,1,0,0
+https://openalex.org/F4320334596,Fisheries and Oceans Canada,1,0,0
+https://openalex.org/F4320336917,"FitzPatrick Institute of African Ornithology, University of Cape Town",1,0,0
+https://openalex.org/F4320309169,Florida Fish and Wildlife Conservation Commission,1,3,0
+https://openalex.org/F4320310202,Florida Institute of Oceanography,1,0,0
+https://openalex.org/F4320314097,Florida Institute of Technology,1,0,0
+https://openalex.org/F4320337356,Fogarty International Center,1,1,0
+https://openalex.org/F4320335310,Fondation BNP Paribas,1,0,0
+https://openalex.org/F4320330855,Fondation Rideau Hall,1,0,0
+https://openalex.org/F4320332021,Fondation Segré,1,0,0
+https://openalex.org/F4320331409,Fondations communautaires du Canada,1,0,0
+https://openalex.org/F4320321390,Fonds De La Recherche Scientifique - FNRS,1,0,0
+https://openalex.org/F4320315775,Fonds Erasme,1,0,0
+https://openalex.org/F4320330523,Fonds Français pour l'Environnement Mondial,1,0,0
+https://openalex.org/F4320321747,Fonds Québécois de la Recherche sur la Nature et les Technologies,1,0,0
+https://openalex.org/F4320311590,Fordham University,1,0,0
+https://openalex.org/F4320331808,Forschungsinstitut für biologischen Landbau,1,0,0
+https://openalex.org/F4320324004,"Forskningsrådet om Hälsa, Arbetsliv och Välfärd",1,1,0
+https://openalex.org/F1872885102,Foundation for Appalachian Ohio,1,0,0
+https://openalex.org/F4320313133,Foundation for Food and Agriculture Research,1,0,0
+https://openalex.org/F4320312210,Fulbright Association,1,0,0
+https://openalex.org/F4320315472,Fulbright Austria,1,0,0
+https://openalex.org/F4320318935,Fundacion Instituto De Inmunologia De Colombia,1,0,0
+https://openalex.org/F4320329058,Fundación Carolina,1,0,0
+https://openalex.org/F4320324622,Fundación Charles Darwin,1,0,0
+https://openalex.org/F4320317551,Fundación Omacha,1,0,0
+https://openalex.org/F4320310214,Fundación Ramón Areces,1,0,0
+https://openalex.org/F4320319133,Fundación para la promoción de la investigación y la tecnología,1,0,0
+https://openalex.org/F4320324363,Fundação Agrisus,1,1,0
+https://openalex.org/F4320323917,Fundação Oswaldo Cruz,1,0,0
+https://openalex.org/F4320323678,Fundação de Amparo à Ciência e Tecnologia do Estado de Pernambuco,1,0,0
+https://openalex.org/F4320322137,Fundação de Amparo à Pesquisa e ao Desenvolvimento Científico e Tecnológico do Maranhão,1,0,0
+https://openalex.org/F4320323206,Fundação de Tecnologia do Estado do Acre,1,0,0
+https://openalex.org/F4320331038,Fundo Amazônia,1,2,0
+https://openalex.org/F4320316008,GIST Cancer Research Fund,1,0,0
+https://openalex.org/F4320310787,Genome Canada,1,0,0
+https://openalex.org/F4320337813,"Genome Center, University of California, Davis",1,0,0
+https://openalex.org/F4320332372,Glenn Research Center,1,1,0
+https://openalex.org/F4320325254,Global Affairs Canada,1,0,0
+https://openalex.org/F4320326208,Gobierno de Aragón,1,1,0
+https://openalex.org/F4320313141,Gobierno del Principado de Asturias,1,0,0
+https://openalex.org/F4320332377,Goddard Space Flight Center,1,2,0
+https://openalex.org/F4320319880,Government of Canada,1,0,0
+https://openalex.org/F4320315987,Grantham Centre for Sustainable Futures,1,0,0
+https://openalex.org/F4320321006,Grantová Agentura České Republiky,1,1,0
+https://openalex.org/F4320320981,Griffith University,1,0,0
+https://openalex.org/F4320331737,Grønt Udviklings- og Demonstrations Program,1,1,0
+https://openalex.org/F2535517162,Guangdong Provincial Special Fund for Modern Agriculture Industry Technology Innovation Teams,1,1,0
+https://openalex.org/F4320338338,H2020 Research Infrastructures,1,1,0
+https://openalex.org/F4320334031,Hakai Institute,1,0,0
+https://openalex.org/F4320320876,Helmholtz-Gemeinschaft,1,0,0
+https://openalex.org/F3518507584,Henry Foundation,1,0,0
+https://openalex.org/F4320338097,"High Magnetic Field Laboratory, Chinese Academy of Sciences",1,0,0
+https://openalex.org/F4320320955,Hong Kong Baptist University,1,0,0
+https://openalex.org/F4320320203,Horizon Foundation,1,4,0
+https://openalex.org/F4320312427,Illumina,1,0,0
+https://openalex.org/F4320310071,Indian Institute of Science,1,0,0
+https://openalex.org/F4320313796,Innovationsfonden,1,0,0
+https://openalex.org/F4320323807,Institut National Du Cancer,1,0,0
+https://openalex.org/F4320324508,Institut National de Recherche en Sciences et Technologies pour l'Environnement et l'Agriculture,1,0,0
+https://openalex.org/F4320323910,Institut National de la Recherche Agronomique,1,1,0
+https://openalex.org/F4320329049,Institut chilien de l'Antarctique,1,2,0
+https://openalex.org/F4320334254,"Institute for Computational and Data Sciences, Pennsylvania State University",1,0,0
+https://openalex.org/F5536997709,"Institute of Food Science and Technology, Chinese Academy of Agricultural Sciences",1,0,0
+https://openalex.org/F4320335599,Instituto Español de Oceanografía,1,0,0
+https://openalex.org/F4320319744,Instituto Nacional de Innovación Agraria,1,1,0
+https://openalex.org/F4320326565,Instituto Nacional de Tecnología Agropecuaria,1,0,0
+https://openalex.org/F4320327890,Instituto Serrapilheira,1,2,0
+https://openalex.org/F4320316037,Instituto Tecnológico Vale,1,0,0
+https://openalex.org/F4320323280,Instituto Tecnológico de Costa Rica,1,0,0
+https://openalex.org/F4320323279,Instituto de Desenvolvimento Sustentável Mamirauá,1,0,0
+https://openalex.org/F4320334923,Instituto de Salud Carlos III,1,1,0
+https://openalex.org/F4320337251,"Instituut voor Landbouw-, Visserij- en Voedingsonderzoek, Vlaamse Overheid",1,0,0
+https://openalex.org/F4320314908,International Association for Bear Research and Management,1,0,0
+https://openalex.org/F4320333726,"International Center for Energy, Environment and Sustainability, Washington University in St. Louis",1,0,0
+https://openalex.org/F4320309988,International Center for Genetic Engineering and Biotechnology,1,0,0
+https://openalex.org/F4320320901,International Centre for Genetic Engineering and Biotechnology,1,0,0
+https://openalex.org/F4320317464,International Fine Particle Research Institute,1,0,0
+https://openalex.org/F5776911981,International Geoscience and Geoparks Programme,1,0,0
+https://openalex.org/F4320327324,International Institute for Applied Systems Analysis,1,0,0
+https://openalex.org/F4320337935,International Institute of Tropical Forestry,1,0,0
+https://openalex.org/F4320317967,"International Max Planck Research School for Environmental, Cellular and Molecular Microbiology",1,0,0
+https://openalex.org/F4320332158,International Max Planck Research School for global Biogeochemical Cycles,1,0,0
+https://openalex.org/F6819348293,International Space Science Institute,1,0,0
+https://openalex.org/F4320337753,Interreg,1,0,0
+https://openalex.org/F4320307313,Interstitial Cystitis Association,1,0,0
+https://openalex.org/F4320310055,Itä-Suomen Yliopisto,1,0,0
+https://openalex.org/F4320313527,JRS Biodiversity Foundation,1,0,0
+https://openalex.org/F4320317122,Jaeb Center for Health Research,1,0,0
+https://openalex.org/F4320320982,James Cook University,1,0,0
+https://openalex.org/F4320306183,James S. McDonnell Foundation,1,1,0
+https://openalex.org/F4320322282,Jane ja Aatos Erkon Säätiö,1,3,0
+https://openalex.org/F4320322716,Japan International Cooperation Agency,1,0,0
+https://openalex.org/F4320330851,Jarislowsky Foundation,1,0,0
+https://openalex.org/F4320311781,Jihočeská Univerzita v Českých Budějovicích,1,0,0
+https://openalex.org/F4320314161,Joint Programming Initiative on Antimicrobial Resistance,1,0,0
+https://openalex.org/F4320311010,Justus Liebig Universität Gießen,1,0,0
+https://openalex.org/F4320323168,Jyväskylän Yliopisto,1,0,0
+https://openalex.org/F4320322308,KU Leuven,1,0,0
+https://openalex.org/F4320311048,Karlsruhe Institute of Technology,1,0,0
+https://openalex.org/F4320321784,"Kementerian Sains, Teknologi dan Inovasi",1,1,0
+https://openalex.org/F4320320213,Kennedy Memorial Trust,1,0,0
+https://openalex.org/F4320316694,Kennedy Trust for Rheumatology Research,1,2,0
+https://openalex.org/F4320322320,King Abdullah University of Science and Technology,1,0,0
+https://openalex.org/F4320321145,King Saud University,1,0,0
+https://openalex.org/F4320329043,Koninklijk Belgisch Instituut voor Natuurwetenschappen,1,0,0
+https://openalex.org/F4320334877,Korea Environmental Industry and Technology Institute,1,1,1
+https://openalex.org/F4320327422,Kwame Nkrumah University of Science and Technology,1,0,0
+https://openalex.org/F4320322364,Labex,1,0,0
+https://openalex.org/F4320318592,Laboratoire d'Excellence TULIP,1,2,0
+https://openalex.org/F4320313495,Lakehead University,1,0,0
+https://openalex.org/F4320309878,Landbúnaðarháskóli Íslands,1,0,0
+https://openalex.org/F4320327137,Laurea University of Applied Sciences,1,0,0
+https://openalex.org/F4320309446,Leona M. and Harry B. Helmsley Charitable Trust,1,2,0
+https://openalex.org/F4320309778,Li Ka Shing Foundation,1,0,0
+https://openalex.org/F4320316111,Llywodraeth Cymru,1,0,0
+https://openalex.org/F4320329591,Lomonosov Moscow State University,1,1,0
+https://openalex.org/F4320314180,MAVA Foundation,1,0,0
+https://openalex.org/F4320309540,Margot Marsh Biodiversity Foundation,1,0,0
+https://openalex.org/F4320309633,Mars,1,0,0
+https://openalex.org/F4320325725,Meijo University,1,0,0
+https://openalex.org/F4320310122,MetroWest Health Foundation,1,0,0
+https://openalex.org/F4320310016,Michigan State University,1,0,0
+https://openalex.org/F4320308943,Microsoft Research,1,0,0
+https://openalex.org/F4320333547,"Mid-America Transportation Center, University of Nebraska-Lincoln",1,0,0
+https://openalex.org/F4320326785,Miljø- og Fødevareministeriet,1,0,0
+https://openalex.org/F4320319641,"Ministerio de Ciencia, Tecnología, Conocimiento e Innovación",1,0,0
+https://openalex.org/F4320319132,"Ministerio de Comercio, Industria y Turismo",1,1,0
+https://openalex.org/F7296444849,Ministerio de Universidades,1,1,0
+https://openalex.org/F4320318739,"Ministerio del Ambiente, Agua y Transición Ecológica",1,0,0
+https://openalex.org/F4320330385,Ministerio para la Transición Ecológica y el Reto Demográfico,1,0,0
+https://openalex.org/F4320323988,Ministero degli Affari Esteri e della Cooperazione Internazionale,1,1,0
+https://openalex.org/F4320321005,"Ministerstvo Školství, Mládeže a Tělovýchovy",1,1,0
+https://openalex.org/F4320322145,Ministerul Educaţiei Naţionale,1,0,0
+https://openalex.org/F3005398154,Ministry of Agriculture,1,0,0
+https://openalex.org/F4320321983,"Ministry of Business, Innovation and Employment",1,2,0
+https://openalex.org/F4320324763,"Ministry of Environment, Forest and Climate Change",1,0,0
+https://openalex.org/F4320320783,"Ministry of Foreign Affairs and Trade, New Zealand",1,0,0
+https://openalex.org/F4320322011,Ministry of Oceans and Fisheries,1,1,0
+https://openalex.org/F4320328359,"Ministry of Science and ICT, South Korea",1,0,0
+https://openalex.org/F4320309618,Ministry of Science and Technology,1,1,0
+https://openalex.org/F4320321540,Ministry of Science and Technology of the People's Republic of China,1,0,0
+https://openalex.org/F4320322030,"Ministry of Science, ICT and Future Planning",1,0,0
+https://openalex.org/F4320323642,"Ministério da Ciência, Tecnologia e Ensino Superior",1,3,0
+https://openalex.org/F4320323809,Ministério da Educação,1,0,0
+https://openalex.org/F4320322675,Mitacs,1,1,0
+https://openalex.org/F4320322788,Mount Allison University,1,0,0
+https://openalex.org/F4320331934,NASA Astrobiology Institute,1,1,0
+https://openalex.org/F4320338425,NOAA Great Lakes Environmental Research Laboratory,1,0,0
+https://openalex.org/F4320325162,NOMIS Stiftung,1,0,0
+https://openalex.org/F4320311880,NSW Office of Environment and Heritage,1,1,0
+https://openalex.org/F4320322650,Narodowym Centrum Nauki,1,2,0
+https://openalex.org/F4320311418,"National Academies of Sciences, Engineering, and Medicine",1,1,0
+https://openalex.org/F4320335231,National Academy of Agricultural Sciences,1,0,0
+https://openalex.org/F4320324213,National Agriculture and Food Research Organization,1,0,0
+https://openalex.org/F4320337472,National Center for Advancing Translational Sciences,1,0,0
+https://openalex.org/F4320337593,National Center for Complementary and Integrative Health,1,1,0
+https://openalex.org/F4320306443,National Geographic Society Education Foundation,1,1,0
+https://openalex.org/F4320313883,National High Magnetic Field Laboratory,1,1,0
+https://openalex.org/F4320337348,National Human Genome Research Institute,1,1,0
+https://openalex.org/F4320323426,National Institute for Environmental Studies,1,0,0
+https://openalex.org/F4320312008,National Institute for Health and Care Excellence,1,0,0
+https://openalex.org/F4320337364,National Institute of Child Health and Human Development,1,0,0
+https://openalex.org/F4320337365,National Institute of Dental and Craniofacial Research,1,1,0
+https://openalex.org/F4320337361,National Institute of Environmental Health Sciences,1,1,0
+https://openalex.org/F4320337337,National Institute on Aging,1,3,0
+https://openalex.org/F4320335777,National Key Research and Development Program of China,1,1,0
+https://openalex.org/F4320335960,National Major Science and Technology Projects of China,1,0,0
+https://openalex.org/F4320333688,National Outstanding Youth Science Fund Project of National Natural Science Foundation of China,1,0,0
+https://openalex.org/F4320310462,National Pork Board,1,0,0
+https://openalex.org/F4320320709,National Research Foundation Singapore,1,0,0
+https://openalex.org/F2461203286,National Science and Technology Council,1,2,0
+https://openalex.org/F4320331164,National Science and Technology Council,1,0,0
+https://openalex.org/F4320329860,National Science and Technology Major Project,1,0,0
+https://openalex.org/F4320335961,National Science and Technology Planning Project,1,0,0
+https://openalex.org/F4320307381,National Sleep Foundation,1,0,0
+https://openalex.org/F4320314918,National Socio-Environmental Synthesis Center,1,0,0
+https://openalex.org/F4320320698,National University of Singapore,1,0,0
+https://openalex.org/F4320310954,National Water Commission,1,0,0
+https://openalex.org/F4320323172,Natural Science Foundation of Chongqing,1,1,0
+https://openalex.org/F4320321921,Natural Science Foundation of Guangdong Province,1,1,0
+https://openalex.org/F4320330944,Nature,1,0,0
+https://openalex.org/F4320315140,Nature Conservancy,1,0,0
+https://openalex.org/F4320322579,Naturvårdsverket,1,0,0
+https://openalex.org/F4320326762,Nemzeti Kutatási Fejlesztési és Innovációs Hivatal,1,1,0
+https://openalex.org/F4320334751,New Zealand Aid Programme,1,1,0
+https://openalex.org/F4320325258,New Zealand Foreign Affairs and Trade,1,0,0
+https://openalex.org/F4320327529,Norges Idrettshøgskole,1,1,0
+https://openalex.org/F4320327469,Norsk Institutt for Vannforskning,1,0,0
+https://openalex.org/F4320336013,Norsk institutt for Bioøkonomi,1,0,0
+https://openalex.org/F4320319540,Oak Spring Garden Foundation,1,0,0
+https://openalex.org/F4320334292,"Observatoire de Paris, Université de Recherche Paris Sciences et Lettres",1,0,0
+https://openalex.org/F4320306789,Ocean Foundation,1,0,0
+https://openalex.org/F4320309482,Oklahoma State University,1,0,0
+https://openalex.org/F4320311401,Oregon State University,1,0,0
+https://openalex.org/F4320330228,Organisation de Coopération et de Développement Économiques,1,0,0
+https://openalex.org/F4320315156,Parks Canada,1,0,0
+https://openalex.org/F4320311872,Parks Victoria,1,0,0
+https://openalex.org/F4921526292,"Peabody Museum of Natural History, Yale University",1,0,0
+https://openalex.org/F4320314262,"Penn State Harrisburg, Pennsylvania State University",1,0,0
+https://openalex.org/F4320308107,Pennsylvania Department of Conservation and Natural Resources,1,0,0
+https://openalex.org/F4320318374,People's Trust for Endangered Species,1,0,0
+https://openalex.org/F4320338039,Planetary Science Division,1,0,0
+https://openalex.org/F4320327255,Pontificia Universidad Católica del Ecuador,1,0,0
+https://openalex.org/F2450793045,Programa de Desarrollo de las Ciencias Básicas,1,0,0
+https://openalex.org/F4320326086,Provincia Autonoma di Trento,1,0,0
+https://openalex.org/F4320334782,Public Health Research Programme,1,1,0
+https://openalex.org/F4320333555,"Purdue Climate Change Research Center, Purdue University",1,0,0
+https://openalex.org/F4320322447,Qatar Petroleum,1,1,0
+https://openalex.org/F4320328830,Queen Elizabeth Scholars,1,0,0
+https://openalex.org/F4320316650,Rainforest Trust,1,0,0
+https://openalex.org/F4320337025,"Red Sea Research Center, King Abdullah University of Science and Technology",1,0,0
+https://openalex.org/F4320326082,Regione Puglia,1,1,0
+https://openalex.org/F4320326084,Regione Toscana,1,0,0
+https://openalex.org/F4320334800,"Research Committee, Aristotle University of Thessaloniki",1,0,0
+https://openalex.org/F2604304870,Rewilding Britain,1,1,0
+https://openalex.org/F4320320933,Rijksuniversiteit Groningen,1,0,0
+https://openalex.org/F4320337818,Rocky Mountain Research Station,1,0,0
+https://openalex.org/F4320311906,Rolex,1,0,0
+https://openalex.org/F4320320005,Royal Academy of Engineering,1,0,0
+https://openalex.org/F4320320646,"Royal Botanical Gardens, Kew",1,0,0
+https://openalex.org/F4320320774,Royal Society Te Apārangi,1,0,0
+https://openalex.org/F4320334801,Russian Academy of Sciences,1,0,0
+https://openalex.org/F4320312581,"Rutgers, The State University of New Jersey",1,0,0
+https://openalex.org/F4320311190,Safari Club International Foundation,1,0,0
+https://openalex.org/F4320315121,Samsung Advanced Institute of Technology,1,0,0
+https://openalex.org/F4320324598,Save Our Seas Foundation,1,0,0
+https://openalex.org/F4320316572,Schmidt Family Foundation,1,1,0
+https://openalex.org/F4320337729,"School of Marine and Atmospheric Sciences, Stony Brook University",1,0,0
+https://openalex.org/F4320334632,Science and Technology Facilities Council,1,2,0
+https://openalex.org/F4320324129,"Secretaría Nacional de Ciencia, Tecnología e Innovación",1,0,0
+https://openalex.org/F4320335286,"Secretaría de Ciencia y Técnica, Universidad Nacional de Río Cuarto",1,0,0
+https://openalex.org/F4320335478,"Secretaría de Ciencia y Técnica, Universidad de Buenos Aires",1,1,0
+https://openalex.org/F4320324115,"Secretaría de Ciencia, Tecnología e Innovación del Distrito Federal",1,0,0
+https://openalex.org/F4320322526,"Secretaría de Educación Superior, Ciencia, Tecnología e Innovación",1,0,0
+https://openalex.org/F4320325578,Secretaría de Salud,1,0,0
+https://openalex.org/F4320333065,Seventh Framework Programme,1,1,0
+https://openalex.org/F4320325302,Shanghai Ocean University,1,0,0
+https://openalex.org/F4320322551,Simon Fraser University,1,0,0
+https://openalex.org/F4320335805,South African National Parks,1,0,0
+https://openalex.org/F4320317496,South Carolina Department of Agriculture,1,0,0
+https://openalex.org/F4320333679,South Central Climate Adaptation Science Center,1,0,0
+https://openalex.org/F4320310628,Southern Illinois University,1,0,0
+https://openalex.org/F4320336405,Special Project for Research and Development in Key areas of Guangdong Province,1,1,0
+https://openalex.org/F4320307947,Sprint,1,0,0
+https://openalex.org/F4320308507,Stanford University,1,0,0
+https://openalex.org/F4320335909,State Education Development Agency Republic of Latvia,1,0,0
+https://openalex.org/F4320309951,Stiftelsen för Miljöstrategisk Forskning,1,0,0
+https://openalex.org/F4320331904,Stony Brook University,1,0,0
+https://openalex.org/F4320327430,Stordalen Foundation,1,0,0
+https://openalex.org/F4320314997,Strong,1,0,0
+https://openalex.org/F4320327901,Suomen Ympäristökeskus,1,0,0
+https://openalex.org/F4320312311,Svenska Pedodontiföreningen,1,0,0
+https://openalex.org/F4320328774,Sächsische Landesbibliothek – Staats- und Universitätsbibliothek Dresden,1,0,0
+https://openalex.org/F4320323383,Technische Universität München,1,0,0
+https://openalex.org/F4320310164,Texas A and M University,1,0,0
+https://openalex.org/F4320308142,Texas Parks and Wildlife Department,1,0,0
+https://openalex.org/F4320308888,Tinker Foundation,1,0,0
+https://openalex.org/F4320320864,Trinity College Dublin,1,0,0
+https://openalex.org/F4320316417,Trond Mohn stiftelse,1,1,0
+https://openalex.org/F4320315065,Tula Foundation,1,0,0
+https://openalex.org/F4320310142,Tulane University,1,0,0
+https://openalex.org/F4320306078,U.S. Department of Defense,1,0,0
+https://openalex.org/F4320312931,UK Space Agency,1,0,0
+https://openalex.org/F4320307854,United Nations,1,0,0
+https://openalex.org/F509137665,United Nations Environment Programme,1,0,0
+https://openalex.org/F4320322419,Universidad Autónoma Metropolitana,1,2,0
+https://openalex.org/F4320318914,Universidad Autónoma de Aguascalientes,1,0,0
+https://openalex.org/F4320322755,Universidad Autónoma de Madrid,1,0,0
+https://openalex.org/F4320325378,Universidad Autónoma de Occidente,1,0,0
+https://openalex.org/F4320317838,Universidad CES,1,0,0
+https://openalex.org/F1840841160,Universidad Católica de Manizales,1,1,0
+https://openalex.org/F4320326132,Universidad Central de Venezuela,1,0,0
+https://openalex.org/F4320319800,Universidad Científica del Sur,1,0,0
+https://openalex.org/F4320329547,Universidad Ean,1,0,0
+https://openalex.org/F4320335258,"Universidad Nacional de Colombia, Sede Manizales",1,0,0
+https://openalex.org/F4320323547,Universidad Nacional de Cuyo,1,1,0
+https://openalex.org/F4320324125,Universidad Nacional de Luján,1,0,0
+https://openalex.org/F4320311364,Universidad Nacional de Rosario,1,1,1
+https://openalex.org/F4320326345,Universidad Nacional del Nordeste,1,0,0
+https://openalex.org/F4320319042,Universidad Peruana Cayetano Heredia,1,0,0
+https://openalex.org/F5041588862,Universidad Peruana Unión,1,1,0
+https://openalex.org/F4320325778,Universidad Pontificia Bolivariana,1,0,0
+https://openalex.org/F4320327944,Universidad Tecnológica de Pereira,1,0,0
+https://openalex.org/F4320318905,Universidad Técnica Particular de Loja,1,0,0
+https://openalex.org/F4320323257,Universidad de Buenos Aires,1,0,0
+https://openalex.org/F4539577321,Universidad de Córdoba,1,0,0
+https://openalex.org/F1502426251,Universidad de La Salle,1,0,0
+https://openalex.org/F4320322805,Universidad de Murcia,1,0,0
+https://openalex.org/F4320328269,Universidad de Salamanca,1,0,0
+https://openalex.org/F4320310967,Universidad de Sevilla,1,2,0
+https://openalex.org/F4320323603,Universidad de la República Uruguay,1,0,0
+https://openalex.org/F4320322487,Universidad del Norte,1,0,0
+https://openalex.org/F4320318987,Universidad del Pacífico,1,0,0
+https://openalex.org/F4320325641,Universidade Estadual de Londrina,1,0,0
+https://openalex.org/F4320319086,Universidade Estadual do Maranhão,1,0,0
+https://openalex.org/F4320329169,Universidade Federal de Sergipe,1,0,0
+https://openalex.org/F4320324953,Universidade Federal do Paraná,1,0,0
+https://openalex.org/F4320322987,Universidade Federal do Rio Grande do Sul,1,0,0
+https://openalex.org/F4320325035,Universidade Federal do Rio de Janeiro,1,0,0
+https://openalex.org/F4320310929,Universidade de Brasília,1,0,0
+https://openalex.org/F4320324902,Universidade de Pernambuco,1,0,0
+https://openalex.org/F4320324091,Universidade de Vigo,1,0,0
+https://openalex.org/F4320319681,Universidade do Estado de Mato Grosso,1,0,0
+https://openalex.org/F4320324048,Universidade do Estado do Rio de Janeiro,1,0,0
+https://openalex.org/F4320323256,Universita degli Studi di Bari Aldo Moro,1,1,0
+https://openalex.org/F4320334905,Universitat Politècnica de València,1,1,0
+https://openalex.org/F4320325745,Universitat de Lleida,1,0,0
+https://openalex.org/F4320322603,Universiteit Gent,1,1,0
+https://openalex.org/F4320318328,Universities Space Research Association,1,0,0
+https://openalex.org/F4320320767,University Grants Commission,1,0,0
+https://openalex.org/F4320320359,University of Aberdeen,1,0,0
+https://openalex.org/F4320319946,University of Alberta,1,0,0
+https://openalex.org/F4320310160,University of Arizona,1,0,0
+https://openalex.org/F4320320360,University of Bristol,1,0,0
+https://openalex.org/F4320332564,"University of California, Davis",1,0,0
+https://openalex.org/F4320332500,"University of California, Santa Barbara",1,0,0
+https://openalex.org/F4320310161,University of Central Florida,1,0,0
+https://openalex.org/F4320320275,University of Exeter,1,0,0
+https://openalex.org/F4320310009,University of Florida,1,0,0
+https://openalex.org/F4320329282,University of Gabès,1,0,0
+https://openalex.org/F4320310010,University of Georgia,1,0,0
+https://openalex.org/F4320310804,University of Hawai'i,1,0,0
+https://openalex.org/F4320312065,University of Illinois System,1,0,0
+https://openalex.org/F4320323959,University of Johannesburg,1,0,0
+https://openalex.org/F4320310131,University of Kansas,1,0,0
+https://openalex.org/F4320310586,University of Louisiana at Lafayette,1,0,0
+https://openalex.org/F4320316435,University of Malakand,1,0,0
+https://openalex.org/F4320310264,University of Nebraska-Lincoln,1,0,0
+https://openalex.org/F4320310260,University of Notre Dame,1,0,0
+https://openalex.org/F4320310179,University of Oklahoma,1,0,0
+https://openalex.org/F4320310371,University of Otago,1,0,0
+https://openalex.org/F4320320326,University of Reading,1,0,0
+https://openalex.org/F4320311740,University of Salford Manchester,1,0,0
+https://openalex.org/F4320310847,University of South Florida,1,0,0
+https://openalex.org/F4320320277,University of Southampton,1,0,0
+https://openalex.org/F4320320985,University of Southern Queensland,1,0,0
+https://openalex.org/F4320320966,University of Sydney,1,0,0
+https://openalex.org/F4320320609,University of Tasmania,1,0,0
+https://openalex.org/F4320310620,University of Texas at Austin,1,0,0
+https://openalex.org/F4320334936,University of Toronto Scarborough,1,0,0
+https://openalex.org/F4320311746,University of Waikato,1,0,0
+https://openalex.org/F4320309434,University of Wisconsin-Madison,1,0,0
+https://openalex.org/F4320324410,University of the Philippines,1,0,0
+https://openalex.org/F4320320986,University of the Sunshine Coast,1,0,0
+https://openalex.org/F4320332903,"University of the West Indies, St. Augustine Campus",1,0,0
+https://openalex.org/F4320323405,Università Cattolica del Sacro Cuore,1,1,0
+https://openalex.org/F4320322648,Università degli Studi di Firenze,1,0,0
+https://openalex.org/F4320324499,Università di Pisa,1,0,0
+https://openalex.org/F4320330128,Universität Greifswald,1,0,0
+https://openalex.org/F4320323381,Universität Hamburg,1,0,0
+https://openalex.org/F4320327491,Universität Innsbruck,1,0,0
+https://openalex.org/F4320323328,Universität Regensburg,1,0,0
+https://openalex.org/F4320323345,Universität Salzburg,1,0,0
+https://openalex.org/F4320325850,Universität Stuttgart,1,0,0
+https://openalex.org/F4320318419,Universität Trier,1,0,0
+https://openalex.org/F4320321691,Universität Wien,1,0,0
+https://openalex.org/F4320323874,Universität Zürich,1,0,0
+https://openalex.org/F4320323821,Universität für Bodenkultur Wien,1,0,0
+https://openalex.org/F4320323419,Université Cheikh Anta Diop de Dakar,1,0,0
+https://openalex.org/F4320324510,Université François-Rabelais,1,0,0
+https://openalex.org/F4320323373,Université d'Orléans,1,0,0
+https://openalex.org/F4320323831,Université de Lausanne,1,0,0
+https://openalex.org/F4320323175,Université de Montréal,1,0,0
+https://openalex.org/F4320311614,Université de Sherbrooke,1,0,0
+https://openalex.org/F4320311271,Université du Québec à Montréal,1,0,0
+https://openalex.org/F4320309593,Utah Agricultural Experiment Station,1,0,0
+https://openalex.org/F4320323641,Vedecká Grantová Agentúra MŠVVaŠ SR a SAV,1,2,0
+https://openalex.org/F4320309607,Velux Stiftung,1,0,0
+https://openalex.org/F5741372674,"Vicerrectoría de Investigación, Creación e Innovación",1,0,0
+https://openalex.org/F4320335005,"Vicerrectoría de Investigación, Universidad de Costa Rica",1,1,0
+https://openalex.org/F4320320802,Victoria University of Wellington,1,0,0
+https://openalex.org/F4320318891,Virginia Marine Resources Commission,1,0,0
+https://openalex.org/F4320318195,Vlaams Instituut voor de Zee,1,0,0
+https://openalex.org/F4320308248,WILEY,1,0,0
+https://openalex.org/F4320323161,WWF International,1,0,0
+https://openalex.org/F4320338079,Wageningen University Fund,1,0,0
+https://openalex.org/F4320313568,Washington Tree Fruit Research Commission,1,0,0
+https://openalex.org/F4320318567,Westlake University,1,0,0
+https://openalex.org/F4320319062,Yayasan Sime Darby,1,0,0
+https://openalex.org/F4320336946,"Zentrum für Entwicklungsforschung, Rheinische Friedrich-Wilhelms-Universität Bonn",1,0,0
+https://openalex.org/F4320321771,Zoologische Gesellschaft Frankfurt,1,0,0
+https://openalex.org/F6460977599,Állatorvostudományi Egyetem,1,0,0

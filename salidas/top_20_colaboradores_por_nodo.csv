@@ -1,0 +1,141 @@
+﻿nodo_id,nodo,posicion,institucion_openalex_id,nombre,tipo,pais,n_obras
+N01,AGROSAVIA,1,https://openalex.org/I36243813,Universidad Nacional de Colombia,education,CO,429
+N01,AGROSAVIA,2,https://openalex.org/I35961687,Universidad de Antioquia,education,CO,104
+N01,AGROSAVIA,3,https://openalex.org/I879563668,Universidade Estadual Paulista (Unesp),education,BR,71
+N01,AGROSAVIA,4,https://openalex.org/I162096671,Universidad de Los Andes,education,CO,70
+N01,AGROSAVIA,5,https://openalex.org/I131077856,Centre de Coopération Internationale en Recherche Agronomique pour le Développement,facility,FR,62
+N01,AGROSAVIA,6,https://openalex.org/I17974374,Universidade de São Paulo,education,BR,48
+N01,AGROSAVIA,7,https://openalex.org/I324290372,Universidad de Córdoba,education,CO,47
+N01,AGROSAVIA,8,https://openalex.org/I31703152,Universidad del Tolima,education,CO,47
+N01,AGROSAVIA,9,https://openalex.org/I64492213,International Center for Tropical Agriculture,funder,CO,43
+N01,AGROSAVIA,10,https://openalex.org/I222202552,Universidad Pedagógica y Tecnológica de Colombia,education,CO,41
+N01,AGROSAVIA,11,https://openalex.org/I271702661,Universidad de Nariño,education,CO,40
+N01,AGROSAVIA,12,https://openalex.org/I115684694,Universidad Industrial de Santander,education,CO,39
+N01,AGROSAVIA,13,https://openalex.org/I4387152967,UMR QualiSud,facility,FR,32
+N01,AGROSAVIA,14,https://openalex.org/I1294671590,Centre National de la Recherche Scientifique,government,FR,31
+N01,AGROSAVIA,15,https://openalex.org/I4210164270,Instituto Colombiano Agropecuario,facility,CO,31
+N01,AGROSAVIA,16,https://openalex.org/I91732220,Universidad del Valle,education,CO,31
+N01,AGROSAVIA,17,https://openalex.org/I233745408,Pontificia Universidad Javeriana,education,CO,30
+N01,AGROSAVIA,18,https://openalex.org/I146165071,Universidade Federal de Viçosa,education,BR,28
+N01,AGROSAVIA,19,https://openalex.org/I33213144,University of Florida,education,US,28
+N01,AGROSAVIA,20,https://openalex.org/I19894307,Université de Montpellier,education,FR,27
+N02,Cenicafé,1,https://openalex.org/I36243813,Universidad Nacional de Colombia,education,CO,27
+N02,Cenicafé,2,https://openalex.org/I152456871,Universidad de Caldas,education,CO,18
+N02,Cenicafé,3,https://openalex.org/I205984670,Czech University of Life Sciences Prague,education,CZ,7
+N02,Cenicafé,4,https://openalex.org/I1336096307,United States Department of Agriculture,government,US,7
+N02,Cenicafé,5,https://openalex.org/I1312222531,Agricultural Research Service,government,US,6
+N02,Cenicafé,6,https://openalex.org/I4210128255,Daniel K. Inouye U.S. Pacific Basin Agricultural Research Center,facility,US,6
+N02,Cenicafé,7,https://openalex.org/I862322245,Universidad EAFIT,education,CO,5
+N02,Cenicafé,8,https://openalex.org/I4210164270,Instituto Colombiano Agropecuario,facility,CO,4
+N02,Cenicafé,9,https://openalex.org/I130769515,Pennsylvania State University,education,US,4
+N02,Cenicafé,10,https://openalex.org/I35961687,Universidad de Antioquia,education,CO,4
+N02,Cenicafé,11,https://openalex.org/I91732220,Universidad del Valle,education,CO,4
+N02,Cenicafé,12,https://openalex.org/I141596103,University of Lisbon,education,PT,4
+N02,Cenicafé,13,https://openalex.org/I4210159669,Centro de Investigación de la Caña de Azúcar de Colombia,nonprofit,CO,3
+N02,Cenicafé,14,https://openalex.org/I64492213,International Center for Tropical Agriculture,funder,CO,3
+N02,Cenicafé,15,https://openalex.org/I233745408,Pontificia Universidad Javeriana,education,CO,3
+N02,Cenicafé,16,https://openalex.org/I4210161046,Universidad Católica de Manizales,education,CO,3
+N02,Cenicafé,17,https://openalex.org/I162096671,Universidad de Los Andes,education,CO,3
+N02,Cenicafé,18,https://openalex.org/I4210127211,Universidad de Manizales,education,CO,3
+N02,Cenicafé,19,https://openalex.org/I4210150934,Universidad De Santander,education,CO,3
+N02,Cenicafé,20,https://openalex.org/I135437138,Universidad del Quindío,education,CO,3
+N03,Cenicaña,1,https://openalex.org/I91732220,Universidad del Valle,education,CO,12
+N03,Cenicaña,2,https://openalex.org/I33213144,University of Florida,education,US,9
+N03,Cenicaña,3,https://openalex.org/I36243813,Universidad Nacional de Colombia,education,CO,8
+N03,Cenicaña,4,https://openalex.org/I4210120904,Amélioration Génétique et Adaptation des Plantes méditerranéennes et tropicales,facility,FR,7
+N03,Cenicaña,5,https://openalex.org/I4210131753,Corporación Colombiana de Investigación Agropecuaria – AGROSAVIA,nonprofit,CO,7
+N03,Cenicaña,6,https://openalex.org/I233745408,Pontificia Universidad Javeriana,education,CO,7
+N03,Cenicaña,7,https://openalex.org/I64492213,International Center for Tropical Agriculture,funder,CO,6
+N03,Cenicaña,8,https://openalex.org/I19894307,Université de Montpellier,education,FR,6
+N03,Cenicaña,9,https://openalex.org/I4210123258,Guangxi Academy of Agricultural Science,education,CN,5
+N03,Cenicaña,10,https://openalex.org/I4210145894,HudsonAlpha Institute for Biotechnology,nonprofit,US,5
+N03,Cenicaña,11,https://openalex.org/I148283060,Lawrence Berkeley National Laboratory,facility,US,5
+N03,Cenicaña,12,https://openalex.org/I4210163431,Mauritius Sugarcane Industry Research Institute,facility,MU,5
+N03,Cenicaña,13,https://openalex.org/I4210123024,South African Sugarcane Research Institute,facility,ZA,5
+N03,Cenicaña,14,https://openalex.org/I4210155369,Sugar Research Australia (Australia),company,AU,5
+N03,Cenicaña,15,https://openalex.org/I95023434,University of KwaZulu-Natal,education,ZA,5
+N03,Cenicaña,16,https://openalex.org/I277688954,Université Paris-Saclay,education,FR,5
+N03,Cenicaña,17,https://openalex.org/I151201029,Consejo Nacional de Investigaciones Científicas y Técnicas,government,AR,4
+N03,Cenicaña,18,https://openalex.org/I189590672,Kansas State University,education,US,4
+N03,Cenicaña,19,https://openalex.org/I72951846,Washington State University,education,US,4
+N03,Cenicaña,20,https://openalex.org/I131077856,Centre de Coopération Internationale en Recherche Agronomique pour le Développement,facility,FR,3
+N05,SINCHI,1,https://openalex.org/I36243813,Universidad Nacional de Colombia,education,CO,124
+N05,SINCHI,2,https://openalex.org/I35961687,Universidad de Antioquia,education,CO,51
+N05,SINCHI,3,https://openalex.org/I17974374,Universidade de São Paulo,education,BR,43
+N05,SINCHI,4,https://openalex.org/I152456871,Universidad de Caldas,education,CO,39
+N05,SINCHI,5,https://openalex.org/I2799870028,Alexander von Humboldt Biological Resources Research Institute,facility,CO,36
+N05,SINCHI,6,https://openalex.org/I4210145858,Universidad de la Amazonia,education,CO,33
+N05,SINCHI,7,https://openalex.org/I187079419,Instituto Nacional de Pesquisas da Amazônia,facility,BR,32
+N05,SINCHI,8,https://openalex.org/I33213144,University of Florida,education,US,32
+N05,SINCHI,9,https://openalex.org/I1294671590,Centre National de la Recherche Scientifique,government,FR,30
+N05,SINCHI,10,https://openalex.org/I1321642675,Museu Paraense Emílio Goeldi,archive,BR,30
+N05,SINCHI,11,https://openalex.org/I4210166444,Institut de Recherche pour le Développement,government,FR,27
+N05,SINCHI,12,https://openalex.org/I134820265,Consejo Superior de Investigaciones Científicas,government,ES,25
+N05,SINCHI,13,https://openalex.org/I103187081,Smithsonian Institution,government,US,25
+N05,SINCHI,14,https://openalex.org/I181391015,Universidade Estadual de Campinas (UNICAMP),education,BR,24
+N05,SINCHI,15,https://openalex.org/I32725510,Universidade Federal de Mato Grosso,education,BR,23
+N05,SINCHI,16,https://openalex.org/I4210102282,Universidad de Las Américas,education,EC,22
+N05,SINCHI,17,https://openalex.org/I162096671,Universidad de Los Andes,education,CO,22
+N05,SINCHI,18,https://openalex.org/I59606676,Universidade Federal do Pará,education,BR,22
+N05,SINCHI,19,https://openalex.org/I19700959,Florida International University,education,US,20
+N05,SINCHI,20,https://openalex.org/I1336856363,Natural History Museum,archive,GB,20
+N06,Humboldt,1,https://openalex.org/I36243813,Universidad Nacional de Colombia,education,CO,167
+N06,Humboldt,2,https://openalex.org/I233745408,Pontificia Universidad Javeriana,education,CO,77
+N06,Humboldt,3,https://openalex.org/I1294671590,Centre National de la Recherche Scientifique,government,FR,62
+N06,Humboldt,4,https://openalex.org/I162096671,Universidad de Los Andes,education,CO,60
+N06,Humboldt,5,https://openalex.org/I35961687,Universidad de Antioquia,education,CO,55
+N06,Humboldt,6,https://openalex.org/I152456871,Universidad de Caldas,education,CO,55
+N06,Humboldt,7,https://openalex.org/I8961855,Universidad Nacional Autónoma de México,education,MX,50
+N06,Humboldt,8,https://openalex.org/I17974374,Universidade de São Paulo,education,BR,47
+N06,Humboldt,9,https://openalex.org/I33213144,University of Florida,education,US,47
+N06,Humboldt,10,https://openalex.org/I332011152,Universidad Distrital Francisco José de Caldas,education,CO,41
+N06,Humboldt,11,https://openalex.org/I121820613,Louisiana State University,education,US,40
+N06,Humboldt,12,https://openalex.org/I2802618504,Instituto Sinchi,facility,CO,36
+N06,Humboldt,13,https://openalex.org/I90803817,Universidad del Rosario,education,CO,34
+N06,Humboldt,14,https://openalex.org/I31703152,Universidad del Tolima,education,CO,34
+N06,Humboldt,15,https://openalex.org/I122558511,Universidade Federal de Mato Grosso do Sul,education,BR,33
+N06,Humboldt,16,https://openalex.org/I151201029,Consejo Nacional de Investigaciones Científicas y Técnicas,government,AR,32
+N06,Humboldt,17,https://openalex.org/I4210166444,Institut de Recherche pour le Développement,government,FR,32
+N06,Humboldt,18,https://openalex.org/I165143802,The University of Queensland,education,AU,32
+N06,Humboldt,19,https://openalex.org/I135437138,Universidad del Quindío,education,CO,29
+N06,Humboldt,20,https://openalex.org/I187079419,Instituto Nacional de Pesquisas da Amazônia,facility,BR,26
+N07,IGAC,1,https://openalex.org/I222202552,Universidad Pedagógica y Tecnológica de Colombia,education,CO,22
+N07,IGAC,2,https://openalex.org/I332011152,Universidad Distrital Francisco José de Caldas,education,CO,18
+N07,IGAC,3,https://openalex.org/I36243813,Universidad Nacional de Colombia,education,CO,10
+N07,IGAC,4,https://openalex.org/I17974374,Universidade de São Paulo,education,BR,8
+N07,IGAC,5,https://openalex.org/I8961855,Universidad Nacional Autónoma de México,education,MX,6
+N07,IGAC,6,https://openalex.org/I2799870028,Alexander von Humboldt Biological Resources Research Institute,facility,CO,4
+N07,IGAC,7,https://openalex.org/I92869138,BOKU University,education,AT,4
+N07,IGAC,8,https://openalex.org/I131077856,Centre de Coopération Internationale en Recherche Agronomique pour le Développement,facility,FR,4
+N07,IGAC,9,https://openalex.org/I1294671590,Centre National de la Recherche Scientifique,government,FR,4
+N07,IGAC,10,https://openalex.org/I4405260580,"Centro de Investigación Científica de Yucatán, A.C",education,MX,4
+N07,IGAC,11,https://openalex.org/I27504731,Colby College,education,US,4
+N07,IGAC,12,https://openalex.org/I142509341,College of the Atlantic,education,US,4
+N07,IGAC,13,https://openalex.org/I1354457,Colorado Mesa University,education,US,4
+N07,IGAC,14,https://openalex.org/I4210149672,Ecologie des Forêts de Guyane,facility,GF,4
+N07,IGAC,15,https://openalex.org/I4405254956,Fundación Jardín Botánico “Joaquín Antonio Uribe” de Medellín,nonprofit,CO,4
+N07,IGAC,16,https://openalex.org/I4210166444,Institut de Recherche pour le Développement,government,FR,4
+N07,IGAC,17,https://openalex.org/I4210088668,"Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement",government,FR,4
+N07,IGAC,18,https://openalex.org/I187079419,Instituto Nacional de Pesquisas da Amazônia,facility,BR,4
+N07,IGAC,19,https://openalex.org/I145372079,Instituto Tecnológico de Costa Rica,education,CR,4
+N07,IGAC,20,https://openalex.org/I121820613,Louisiana State University,education,US,4
+N09,INVEMAR,1,https://openalex.org/I36243813,Universidad Nacional de Colombia,education,CO,88
+N09,INVEMAR,2,https://openalex.org/I4210135039,Institute of Marine and Coastal Research,facility,AR,51
+N09,INVEMAR,3,https://openalex.org/I227875332,Universidad del Magdalena,education,CO,21
+N09,INVEMAR,4,https://openalex.org/I154202486,Ifremer,facility,FR,15
+N09,INVEMAR,5,https://openalex.org/I8961855,Universidad Nacional Autónoma de México,education,MX,15
+N09,INVEMAR,6,https://openalex.org/I35961687,Universidad de Antioquia,education,CO,14
+N09,INVEMAR,7,https://openalex.org/I91732220,Universidad del Valle,education,CO,14
+N09,INVEMAR,8,https://openalex.org/I4210089824,Centre d'Écologie Fonctionnelle et Évolutive,facility,FR,12
+N09,INVEMAR,9,https://openalex.org/I35440088,ETH Zurich,education,CH,12
+N09,INVEMAR,10,https://openalex.org/I162096671,Universidad de Los Andes,education,CO,12
+N09,INVEMAR,11,https://openalex.org/I1294671590,Centre National de la Recherche Scientifique,government,FR,11
+N09,INVEMAR,12,https://openalex.org/I4210166444,Institut de Recherche pour le Développement,government,FR,11
+N09,INVEMAR,13,https://openalex.org/I4405254656,Institute of Terrestrial Ecosystems,facility,CH,11
+N09,INVEMAR,14,https://openalex.org/I4210149887,Marine Biodiversity Exploitation and Conservation,facility,FR,11
+N09,INVEMAR,15,https://openalex.org/I2800262456,"Swiss Federal Institute for Forest, Snow and Landscape Research",facility,CH,10
+N09,INVEMAR,16,https://openalex.org/I231847692,Universidad de Bogotá Jorge Tadeo Lozano,education,CO,10
+N09,INVEMAR,17,https://openalex.org/I71999127,Universitat de Barcelona,education,ES,10
+N09,INVEMAR,18,https://openalex.org/I159885104,École Pratique des Hautes Études,education,FR,10
+N09,INVEMAR,19,https://openalex.org/I2799870028,Alexander von Humboldt Biological Resources Research Institute,facility,CO,9
+N09,INVEMAR,20,https://openalex.org/I4405269384,Instituto de Ciencias del Mar y Limnología,facility,MX,9
