@@ -21,6 +21,7 @@ from urllib.request import Request, urlopen
 
 API = "https://api.openalex.org"
 DESDE = "2019-01-01"
+CAMPO_AGRO_OPENALEX = "11|23"  # Agricultural and Biological Sciences | Environmental Science
 PER_PAGE_COMPLETO = 200  # OpenAlex lo acepta como compatibilidad heredada; fallback a 100.
 PER_PAGE_PRUEBA = 50
 MAX_REINTENTOS = 6
@@ -89,6 +90,12 @@ def cargar_nodos(ruta=ARCHIVO_NODOS):
             or (fila.get("nombre_buscado") or "").strip()
             or openalex_id
         )
+        grupo = (fila.get("grupo") or "").strip().casefold()
+        alcance = (fila.get("alcance") or "").strip().casefold()
+        if grupo == "expansion" and alcance not in {"completo", "campo_agro"}:
+            omitidos.append((nombre, f"alcance inválido para expansión: {alcance or 'vacío'}"))
+            continue
+
         validos.append(
             {
                 "nodo_id": nodo_id,
@@ -96,7 +103,8 @@ def cargar_nodos(ruta=ARCHIVO_NODOS):
                 "nombre": nombre,
                 "siglas": (fila.get("siglas") or "").strip(),
                 "pais": (fila.get("pais_esperado") or fila.get("pais") or "").strip(),
-                "grupo": (fila.get("grupo") or "").strip(),
+                "grupo": grupo,
+                "alcance": alcance or "completo",
                 "ror": (fila.get("ror") or "").strip(),
                 "url_oficial": (fila.get("url_oficial") or "").strip(),
                 "fila_origen": fila,
@@ -105,8 +113,14 @@ def cargar_nodos(ruta=ARCHIVO_NODOS):
     return validos, omitidos
 
 
-def filtro_nodo(openalex_id, desde=DESDE):
-    return f"authorships.institutions.lineage:{short_id(openalex_id)},from_publication_date:{desde}"
+def filtro_nodo(openalex_id, desde=DESDE, alcance="completo"):
+    filtros = [
+        f"authorships.institutions.lineage:{short_id(openalex_id)}",
+        f"from_publication_date:{desde}",
+    ]
+    if alcance == "campo_agro":
+        filtros.append(f"topics.field.id:{CAMPO_AGRO_OPENALEX}")
+    return ",".join(filtros)
 
 
 def api_json(endpoint, params, api_key, per_page_fallback=False):
@@ -540,12 +554,54 @@ def inicializar_checkpoint(conn, nodo_id, modo):
 
 def contar_obras(nodo, api_key, desde):
     params = {
-        "filter": filtro_nodo(nodo["openalex_id"], desde),
+        "filter": filtro_nodo(nodo["openalex_id"], desde, nodo.get("alcance", "completo")),
         "per_page": 1,
         "select": "id",
     }
     result = api_json("works", params, api_key)
     return result.get("meta", {}).get("count", 0)
+
+
+def reportar_duplicados_entidad(nodos, api_key):
+    """Informa coincidencias por ROR o lineage sin fusionar ni cambiar nodos."""
+    instituciones = []
+    for nodo in nodos:
+        try:
+            data = api_json(
+                f"institutions/{short_id(nodo['openalex_id'])}",
+                {"select": "id,display_name,ror,lineage"},
+                api_key,
+            )
+            instituciones.append({
+                "nodo": nodo,
+                "id": short_id(data.get("id", "")),
+                "nombre": data.get("display_name") or nodo["nombre"],
+                "ror": (data.get("ror") or "").strip().rstrip("/"),
+                "lineage": {short_id(item) for item in (data.get("lineage") or []) if short_id(item)},
+            })
+        except Exception as error:
+            print(f"No se pudo verificar identidad de {nodo['nombre']}: {error}")
+
+    casos = []
+    for indice, primero in enumerate(instituciones):
+        for segundo in instituciones[indice + 1:]:
+            motivos = []
+            if primero["ror"] and primero["ror"] == segundo["ror"]:
+                motivos.append(f"ROR compartido {primero['ror']}")
+            if ((primero["id"] and primero["id"] in segundo["lineage"])
+                    or (segundo["id"] and segundo["id"] in primero["lineage"])):
+                motivos.append("relación directa de lineage")
+            if motivos:
+                casos.append((primero, segundo, motivos))
+
+    print("\nPosibles solapamientos institucionales (solo reporte; sin fusionar):")
+    if not casos:
+        print("No se detectaron coincidencias por ROR ni relaciones directas de lineage.")
+    for primero, segundo, motivos in casos:
+        print(
+            f"- {primero['nodo']['nombre']} [{primero['nodo']['openalex_id']}] ↔ "
+            f"{segundo['nodo']['nombre']} [{segundo['nodo']['openalex_id']}]: {', '.join(motivos)}"
+        )
 
 
 def extraer_nodo(conn, nodo, nodos_por_institucion, api_key, modo, desde, limite=None):
@@ -569,7 +625,7 @@ def extraer_nodo(conn, nodo, nodos_por_institucion, api_key, modo, desde, limite
     cursor = cursor or "*"
     while True:
         params = {
-            "filter": filtro_nodo(nodo["openalex_id"], desde),
+            "filter": filtro_nodo(nodo["openalex_id"], desde, nodo.get("alcance", "completo")),
             "cursor": cursor,
             "per_page": per_page,
             "select": SELECT_OBRAS,
@@ -680,8 +736,8 @@ def main():
     modos = parser.add_mutually_exclusive_group(required=True)
     modos.add_argument("--conteo", action="store_true", help="Consulta solo meta.count por nodo")
     modos.add_argument("--prueba", metavar="NODO", help="Extrae hasta 50 obras de un nodo (nodo_id, OpenAlex ID o nombre)")
-    modos.add_argument("--completo", action="store_true", help="Extrae todas las obras desde 2019; no ejecutar sin autorización explícita")
-    parser.add_argument("--grupo", choices=("nucleo", "universidad", "internacional", "todos"), default="nucleo", help="Grupo de nodos que se procesará (por defecto: nucleo)")
+    modos.add_argument("--completo", action="store_true", help="Extrae todas las obras según grupo y alcance")
+    parser.add_argument("--grupo", choices=("nucleo", "universidad", "internacional", "expansion", "todos"), default="nucleo", help="Grupo de nodos que se procesará (por defecto: nucleo)")
     parser.add_argument("--desde", default=DESDE, metavar="AAAA-MM-DD", help="Fecha inicial de publicación (por defecto: 2019-01-01)")
     parser.add_argument("--nodos", type=Path, default=ARCHIVO_NODOS, help="CSV de nodos; por defecto nodos.csv junto al script")
     args = parser.parse_args()
@@ -700,6 +756,8 @@ def main():
     except (OSError, csv.Error, ValueError) as error:
         print(f"No se pudo cargar el CSV de nodos: {error}")
         return 2
+
+    todos_nodos = list(nodos)
 
     if args.grupo != "todos":
         nodos = [nodo for nodo in nodos if nodo["grupo"].casefold() == args.grupo]
@@ -730,16 +788,18 @@ def main():
         ruta_db = DB_COMPLETA
         limite = None
 
-        if args.grupo == "todos":
-            estimado = 0
-            try:
-                for nodo in nodos_objetivo:
-                    estimado += contar_obras(nodo, api_key, fecha_desde.isoformat())
-            except Exception as error:
-                print(f"No se pudo estimar el total de obras; extracción cancelada: {error}")
-                return 2
-            print(f"Total estimado de obras (suma por nodo; obras compartidas pueden contarse más de una vez): {estimado}")
-            confirmacion = input("Escribe CONFIRMAR para iniciar la extracción completa de todos los grupos: ").strip()
+        estimado = 0
+        try:
+            for nodo in nodos_objetivo:
+                count = contar_obras(nodo, api_key, fecha_desde.isoformat())
+                estimado += count
+                print(f"Estimado | {nodo['nombre']} | {count}")
+        except Exception as error:
+            print(f"No se pudo estimar el total de obras; extracción cancelada: {error}")
+            return 2
+        print(f"Total estimado (suma por nodo; obras compartidas pueden contarse más de una vez): {estimado}")
+        if estimado > 20000:
+            confirmacion = input("El total supera 20.000. Escribe CONFIRMAR para iniciar la extracción completa: ").strip()
             if confirmacion != "CONFIRMAR":
                 print("Extracción cancelada: no se recibió la confirmación escrita.")
                 return 0
@@ -747,6 +807,8 @@ def main():
     if not nodos_objetivo:
         print("No hay nodos con OpenAlex ID válido para extraer.")
         return 2
+
+    reportar_duplicados_entidad(todos_nodos, api_key)
 
     conn = abrir_db(ruta_db)
     try:
